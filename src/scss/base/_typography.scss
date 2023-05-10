@@ -19,6 +19,8 @@
 .title {
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  color: #1D2939;
+
   &_lg {
     font-weight: 800;
     font-size: 120px;
@@ -35,11 +37,12 @@
     font-size: 40px;
     text-transform: none;
   }
-&_xs{
-  font-weight: 600;
-  font-size: 24px;
-  text-transform: none;
-}
+
+  &_xs {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: none;
+  }
 }
 
 
