@@ -1,0 +1,13 @@
+.page-news{
+  .link{
+    padding-left: 32px;
+    &:after{
+      left: 0;
+      right: auto;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  .post-list__item{
+    margin-bottom: 24px;
+  }
+}

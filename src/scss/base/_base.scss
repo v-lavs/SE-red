@@ -16,9 +16,11 @@ body {
 .d-flex {
   display: flex;
 }
-.color-yellow{
+
+.color-yellow {
   color: #FCC214;
 }
+
 .label {
   display: inline-block;
   color: #F8FAFD;
@@ -62,6 +64,7 @@ body {
       z-index: -1;
     }
   }
+
   &__content {
     p {
       margin-bottom: 20px;
@@ -70,6 +73,37 @@ body {
         margin-bottom: 0;
       }
     }
+  }
+}
+
+.link {
+  position: relative;
+  color: #1D2939;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-right: 32px;
+  transition: color .35s;
+
+  &:hover,
+  &:focus {
+    color: #FCC214;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../assets/img/keyboard-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
 
