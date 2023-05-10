@@ -866,6 +866,10 @@ body.modal_open {
   display: flex;
 }
 
+.color-yellow {
+  color: #FCC214;
+}
+
 .label {
   display: inline-block;
   color: #F8FAFD;
