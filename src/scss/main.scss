@@ -1,0 +1,33 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import '../lib/swiper/swiper-bundle.min';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/anim';
+
+@import 'components/menu';
+@import 'components/button';
+@import 'components/form';
+@import 'components/slider';
+@import 'components/popup';
+@import 'components/card';
+@import 'components/infinity-block';
+
+
+
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/section/section-banner';
+@import 'layout/section/section-about';
+@import 'layout/section/section-news';
+@import 'layout/section/section-investments';
+
+@import 'pages/page-project';
+@import 'pages/page-news';
+@import 'pages/page-article';
+

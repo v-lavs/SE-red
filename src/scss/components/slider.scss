@@ -1,0 +1,14 @@
+.swiper-pagination {
+  width: 100%;
+
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #FCC214;
+}
+
+.swiper-pagination-bullet-active {
+ background-color: #FCC214;
+  box-shadow: rgba(252,194,20, 0.3) 0 0 0 3px;
+}

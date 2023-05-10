@@ -1,0 +1,47 @@
+.text {
+  &_xl {
+
+  }
+
+  &_lg {
+
+  }
+
+  &_md {
+
+  }
+
+  &_sm {
+
+  }
+}
+
+.title {
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  &_lg {
+    font-weight: 800;
+    font-size: 120px;
+
+  }
+
+  &_md {
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &_sm {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: none;
+  }
+&_xs{
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: none;
+}
+}
+
+
+
+

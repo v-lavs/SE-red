@@ -1,0 +1,58 @@
+.section-news {
+  .see-more {
+    position: relative;
+    color: #1D2939;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-right: 32px;
+    margin-left: auto;
+    transition: color .35s;
+
+    &:hover,
+    &:focus {
+      color: #FCC214;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../assets/img/keyboard-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  .top-part {
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .section__heading {
+    margin: 0;
+  }
+
+  .toggle-block {
+    position: relative;
+    margin: 0 28px;
+    z-index: 1;
+  }
+}
+
+.section__heading.switch-toggle {
+  .title_sm {
+    color: #B8C0CC;
+  }
+
+  .title_lg {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,156 @@
+.section-investments {
+  .container {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-image: url(../assets/img/coin-group.svg);
+      background-repeat: no-repeat;
+      background-position: right 0;
+      background-size: contain;
+      width: 30.5%;
+      height: 303px;
+      right: 0;
+      top: -17%;
+    }
+  }
+
+  .title_xs {
+    color: #1D2939;
+    margin-bottom: 24px;
+  }
+
+  .bg-yellow {
+    padding-top: 64px;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .section__heading {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .section__content {
+    margin-bottom: 64px;
+    max-width: 708px;
+  }
+
+  .part_left {
+    position: relative;
+    width: 40%;
+    padding-top: 42.25%;
+  }
+
+  .wrap-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 93px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 384px;
+  }
+
+  .part_right {
+    padding-top: 48px;
+    width: 60%;
+  }
+}
+
+.goal-fond {
+  display: flex;
+  max-width: 708px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 64px;
+
+  &__item {
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      background: #F2F4F7;
+      opacity: 0.7;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    &:after {
+      left: 50%;
+    }
+
+    &:first-child:before {
+      display: none;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  &__top-content {
+    width: 36px;
+    height: 38px;
+    background: #F8FAFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #475467;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 600;
+    padding-top: 60px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      background-color: #FCC214;
+      border: 6px solid #F8FAFD;
+      z-index: 1;
+      border-radius: 50%;
+      top: 15px;
+    }
+
+    &:after {
+      width: 4px;
+      height: 19px;
+      background-color: #FCFCFD;
+      border: 1px solid #F8FAFD;
+      top: 0;
+    }
+  }
+}
