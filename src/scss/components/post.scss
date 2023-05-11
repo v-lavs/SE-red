@@ -47,7 +47,7 @@
     top: 0;
     bottom: 0;
     background: linear-gradient(180deg, rgba(29, 41, 57, 0) 60.03%, #1D2939 100%);
-    z-index: 0;
+    z-index: 1;
   }
 
   &__thumb {
@@ -59,11 +59,12 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
   }
 
   &__content {
     position: relative;
+    z-index: 1;
   }
 
   &__title {

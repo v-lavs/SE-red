@@ -12,64 +12,81 @@
   transition: .5s;
   color: #FFFFFF;
 
-  &__icon {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    margin-right: 8px;
-
-    svg {
-      max-width: 100%;
-      display: inline-block;
-    }
-  }
-
-  &_warm {
-    background: #FCC214;
+  &_with-icon {
+    background-color: #B8C0CC;
+    border: none;
     &:hover,
     &:focus {
       background-color: #FCBA14;
-      border-color: #FCBA14;
-    }
-    &:visited{
-      background-color: #EDAF13;
-    }
-    &:disabled{
-      background-color: #DFE1E4;
-    }
-  }
 
-  &_stroke {
-    background-color: transparent;
-    border-color: #FCC217;
-    color: #FFFFFF;
-
-    &:hover,
-    &:focus {
-      background-color: rgba(248, 250, 253, 0.05);
     }
 
     &:visited {
-      background-color: transparent;
-      border-color:#EDAF13;
-    }
-    &:disabled{
-      color: #B8C0CC;
-      border-color: #B8C0CC;
+      background-color: #EDAF13;
     }
   }
+    &__icon {
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      margin-right: 8px;
 
-}
+      svg {
+        max-width: 100%;
+        display: inline-block;
+      }
+    }
 
-.btn_close{
-  display: none;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-  width: 24px;
-  height: 24px;
-  background-image: url(../assets/img/ic_close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+    &_warm {
+      background: #FCC214;
+
+      &:hover,
+      &:focus {
+        background-color: #FCBA14;
+        border-color: #FCBA14;
+      }
+
+      &:visited {
+        background-color: #EDAF13;
+      }
+
+      &:disabled {
+        background-color: #DFE1E4;
+      }
+    }
+
+    &_stroke {
+      background-color: transparent;
+      border-color: #FCC217;
+      color: #FFFFFF;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(248, 250, 253, 0.05);
+      }
+
+      &:visited {
+        background-color: transparent;
+        border-color: #EDAF13;
+      }
+
+      &:disabled {
+        color: #B8C0CC;
+        border-color: #B8C0CC;
+      }
+    }
+
+  }
+
+  .btn_close {
+    display: none;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/img/ic_close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }

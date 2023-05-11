@@ -25,6 +25,7 @@ $(document).ready(function () {
         scrollPrev = scrolled;
     });
 
+
     // MOBILE MENU
     const nav = $('.header__nav');
 
@@ -41,7 +42,7 @@ $(document).ready(function () {
         $('body').removeClass('modal_open');
     });
 
-    //SWITCH NEWS-ACTION
+//SWITCH NEWS-ACTION
     $('#switch').click(function () {
 
         if ($(this).is(':checked')) {
@@ -49,10 +50,10 @@ $(document).ready(function () {
         }
     });
 
-    //CUSTOM SELECT
+//CUSTOM SELECT
     $('.custom-select').niceSelect();
 
-    //SLIDERS
+//SLIDERS
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
             pagination: {
@@ -60,6 +61,25 @@ $(document).ready(function () {
             },
         });
     }
+
+    var galleryThumbs = new Swiper(".gallery-thumbs", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper(".gallery-top", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
 });
 
 

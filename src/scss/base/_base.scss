@@ -50,6 +50,11 @@ body {
   padding-bottom: 64px;
   padding-top: 123px;
 
+  &__inner {
+    position: relative;
+    background-color: #FFFFFF;
+  }
+
   &__pagination {
     display: flex;
     align-items: center;
@@ -70,6 +75,10 @@ body {
     margin: 0 10px;
     border: 1px solid #DFE1E4;
     border-radius: 4px;
+  }
+
+  .section__heading {
+    margin-bottom: 64px;
   }
 }
 
@@ -133,6 +142,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+
+.link-back {
+  padding-left: 32px;
+
+  &:after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 

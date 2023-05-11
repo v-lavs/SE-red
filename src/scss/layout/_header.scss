@@ -7,8 +7,8 @@
   z-index: 900;
   color: #F8FAFD;
   font-size: 14px;
-  &:not(.project),
-  &:not(.home) {
+
+  &_white {
     background-color: #FFFFFF;
     color: #1D2939;
     .menu__item{
