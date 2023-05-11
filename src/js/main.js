@@ -3,10 +3,10 @@
 * */
 
 //= include ../lib/jquery.min.js ;
+//= include ../lib/jquery-nice-select-1.1.0/js/jquery.nice-select.js
 //= include ../lib/swiper/swiper-bundle.min.js
 
 // CUSTOM SCRIPTS
-
 
 
 $(document).ready(function () {
@@ -25,7 +25,6 @@ $(document).ready(function () {
         scrollPrev = scrolled;
     });
 
-
     // MOBILE MENU
     const nav = $('.header__nav');
 
@@ -42,7 +41,7 @@ $(document).ready(function () {
         $('body').removeClass('modal_open');
     });
 
-//SWITCH NEWS-ACTION
+    //SWITCH NEWS-ACTION
     $('#switch').click(function () {
 
         if ($(this).is(':checked')) {
@@ -50,7 +49,10 @@ $(document).ready(function () {
         }
     });
 
-//    SLIDERS
+    //CUSTOM SELECT
+    $('.custom-select').niceSelect();
+
+    //SLIDERS
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
             pagination: {

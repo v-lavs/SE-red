@@ -7,11 +7,20 @@
   z-index: 900;
   color: #F8FAFD;
   font-size: 14px;
+  &:not(.project),
+  &:not(.home) {
+    background-color: #FFFFFF;
+    color: #1D2939;
+    .menu__item{
+      color: #1D2939;
+    }
+  }
 
   &_active {
     top: -100%;
     transform: translateY(-100%);
   }
+
   .container {
     border-bottom: 1px solid rgba(184, 192, 204, .25);
   }

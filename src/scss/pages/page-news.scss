@@ -1,13 +1,30 @@
-.page-news{
-  .link{
+.page-news {
+  .link {
     padding-left: 32px;
-    &:after{
+
+    &:after {
       left: 0;
       right: auto;
       transform: translateY(-50%) rotate(180deg);
     }
   }
-  .post-list__item{
-    margin-bottom: 24px;
+
+  .post-list {
+    padding-bottom: 24px;
+
+    &__item {
+      margin-bottom: 24px;
+    }
   }
+}
+
+.toolbar-btn{
+  border: none;
+  margin-left: 20px;
+}
+
+.filter-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -1,3 +1,7 @@
+
+
+
+/*   SWITCH-BUTTON  */
 input[type=checkbox]{
     height: 0;
     width: 0;
@@ -30,7 +34,7 @@ label:after {
 }
 
 input:checked + label {
-    background-color: rgba(184,192,204, .5);
+    background-color: #FFFFFF;
 }
 
 input:checked + label:after {

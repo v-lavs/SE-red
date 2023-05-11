@@ -18,6 +18,8 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="./dist/main.css">
+    <script src="../../../алекс/SEDREADI-all/sedReady/src/lib/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="../../../алекс/SEDREADI-all/sedReady/src/lib/jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
 </head>
 
 <body>
@@ -102,273 +104,289 @@
         </div>
     </header>
 
-    <main class="main page-news">
+    <main class="main page page-news">
         <div class="container">
-            <a href="index.html" class="link">головна</a>
+            <a href="index.html" class="link link-back">головна</a>
         </div>
-        <section class="section section-news">
-            <div class="container">
-                <div class="top-part d-flex">
-                    <div class="section__heading">
-                        <h2 class="title title_sm">Новини</h2>
-                        <span class="title title_lg">Новини</span>
-                    </div>
-                    <input type="checkbox" id="switch"/><label for="switch" class="toggle-block">Toggle</label>
-                    <div class="section__heading switch-toggle">
-                        <h3 class="title title_sm ">Акції</h3>
-                        <span class="title title_lg">Акції</span>
-                    </div>
+        <div class="container">
+            <div class="switch-heading  d-flex">
+                <div class="section__heading">
+                    <h2 class="title title_sm">Новини</h2>
+                    <span class="title title_lg">Новини</span>
                 </div>
-                <div class="filter-toolbar">
-
-                </div>
-                <ul class="post-list">
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_yellow">Smart 266</span>
-                                    <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_yellow">Smart 266</span>
-                                    <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_green">Zelena 111</span>
-                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li class="post-list__item">
-                        <a href="page-article.html" class="post-list__link">
-                            <article class="post">
-                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
-                                <div class="post__content">
-                                    <span class="label label_yellow">Smart 266</span>
-                                    <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
-                                    <div class="post__info">
-                                        <span class="post__info-item date">13 Березня 2023</span>
-                                        <span class="post__info-item view">156 Переглядів</span>
-                                        <span class="post__info-item author">Admin</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                </ul>
-                <div class="pagination">
-                    <a href="#" class="btn btn_warm">Наступна</a>
+                <input type="checkbox" id="switch"/><label for="switch" class="toggle-block">Toggle</label>
+                <div class="section__heading switch-toggle">
+                    <h3 class="title title_sm ">Акції</h3>
+                    <span class="title title_lg">Акції</span>
                 </div>
             </div>
-        </section>
+            <div class="filter-toolbar">
+
+                <div class="part_left">
+                    <div class="wrap-selectric-filter-toolbar">
+                        <select name="sort-by-cost" class="custom-select">
+                            <option>Сортувати з</option>
+                            <option>Популярні</option>
+                            <option>Новинки</option>
+                            <option>Акційні</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="part_right">
+                    <div class="sort-buttons">
+                        <button type="button" class="toolbar-btn label label_green">Zelena 111</button>
+                        <button type="button" class="toolbar-btn label label_yellow">Smart 266</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="post-list">
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_yellow">Smart 266</span>
+                                <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_yellow">Smart 266</span>
+                                <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_green">Zelena 111</span>
+                                <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="post-list__item">
+                    <a href="page-article.html" class="post-list__link">
+                        <article class="post">
+                            <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                            <div class="post__content">
+                                <span class="label label_yellow">Smart 266</span>
+                                <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
+                                <div class="post__info">
+                                    <span class="post__info-item date">13 Березня 2023</span>
+                                    <span class="post__info-item view">156 Переглядів</span>
+                                    <span class="post__info-item author">Admin</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <div class="page__pagination">
+                <a href="#" class="btn btn_warm">Наступна</a>
+                <div class="page__count">Сторінка<span class="page__number"> 1 </span> з 10</div>
+            </div>
+        </div>
     </main>
 
     <!--footer-->
