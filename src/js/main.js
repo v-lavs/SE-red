@@ -95,20 +95,14 @@ $(document).ready(function () {
         delegate: 'a',
         type: 'image',
         gallery: {enabled: true},
-        removalDelay: 3500, //delay removal by X to allow out-animation
+        removalDelay: 3500,
         callbacks: {
             beforeOpen: function() {
-                // just a hack that adds mfp-anim class to markup
+
                 this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
                 this.st.mainClass = this.st.el.attr('data-effect');
             }
         },
-        // removalDelay: 3000,
-        // callbacks: {
-        //     beforeOpen: function() {
-        //         this.st.mainClass = this.st.el.attr('data-effect');
-        //     }
-        // },
         closeOnContentClick: true,
         midClick: true // allow opening
     });

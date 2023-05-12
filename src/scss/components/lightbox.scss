@@ -43,6 +43,7 @@ button.mfp-arrow{
   right: 15px;
 }
 
+//ANIMATION
 .mfp-zoom-in {
 
   /* start state */
@@ -78,7 +79,5 @@ button.mfp-arrow{
     &.mfp-bg {
       opacity: 0;
     }
-
   }
-
 }
