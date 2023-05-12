@@ -68,28 +68,53 @@ $(document).ready(function () {
             },
         });
     }
-
-    var galleryThumbs = new Swiper(".gallery-thumbs", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 8,
+        slidesPerView: 'auto',
         freeMode: true,
+        watchSlidesVisibility: true,
         watchSlidesProgress: true,
     });
-    var galleryTop = new Swiper(".gallery-top", {
-        loop: true,
+    var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         thumbs: {
-            galleryTop: galleryThumbs,
+            swiper: galleryThumbs
+        }
+    });
+
+//    SLIDE-DOWN SLIDE-THUMBS
+    $('.panel-down').click(function (e) {
+        $('.gallery-thumb-panel').toggleClass('active');
+        $('.icon-fullscreen, .gallery-top .swiper-button-next, .gallery-top .swiper-button-prev').toggleClass('active-panel');
+    });
+    $('.gallery-top .swiper-wrapper').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {enabled: true},
+        removalDelay: 3500, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+                // just a hack that adds mfp-anim class to markup
+                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
         },
+        // removalDelay: 3000,
+        // callbacks: {
+        //     beforeOpen: function() {
+        //         this.st.mainClass = this.st.el.attr('data-effect');
+        //     }
+        // },
+        closeOnContentClick: true,
+        midClick: true // allow opening
     });
 
 //    SWIPER IN POPUP
-    $('.popup-link').magnificPopup({
+    $('.popup-gallery-link').magnificPopup({
         callbacks: {
             open: function () {
                 let constructionProgress = new Swiper(".construction-progress", {
@@ -101,6 +126,7 @@ $(document).ready(function () {
             },
         }
     });
+
 });
 
 

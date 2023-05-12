@@ -1,14 +1,11 @@
-.mfp-close-btn-in .mfp-close {
-  color: #FFFFFF;
-}
-
-.modal {
 
 
+.modal-gallery-progress {
   .construction-progress {
-    .swiper-wrapper{
+    .swiper-wrapper {
       align-items: center;
     }
+
     .swiper-button-next,
     .swiper-button-prev {
       width: 48px;
@@ -16,12 +13,19 @@
       background-color: #FCC214;
       opacity: 0.85;
       border-radius: 50%;
-      &:after{
+
+      &:after {
         color: #475467;
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 600;
       }
     }
   }
 }
+
+
+
+
+
+
 
