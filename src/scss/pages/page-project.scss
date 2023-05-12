@@ -48,12 +48,14 @@
 
   .notification {
     position: relative;
+    max-width: 226px;
+    width: 100%;
     display: block;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     color: #98A2B3;
-    padding-top: 12px;
+    padding-top: 7px;
     padding-left: 24px;
 
     &:before {
@@ -66,7 +68,7 @@
       background-position: center;
       background-size: contain;
       left: 3px;
-      top: 11px;
+      top: 5px;
     }
   }
 
@@ -198,6 +200,23 @@
   }
 }
 
+
+//SECTION CONSTRUCTION
+.construction-period{
+  display: flex;
+  width: 100%;
+  padding-bottom: 32px;
+  .wrap-select{
+    max-width: 300px;
+    width: 100%;
+    margin-right: 20px;
+    border: 1px solid #DFE1E4;
+    border-radius: 4px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
 
 //SECTION DOCUMENTS
 
