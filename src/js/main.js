@@ -4,6 +4,7 @@
 
 //= include ../lib/jquery.min.js ;
 //= include ../lib/jquery-nice-select-1.1.0/js/jquery.nice-select.js
+//= include ../lib/magnific-popup/jquery.magnific-popup.min.js
 //= include ../lib/swiper/swiper-bundle.min.js
 
 // CUSTOM SCRIPTS
