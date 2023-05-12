@@ -53,7 +53,7 @@
     font-size: 12px;
     line-height: 1.33;
     color: #98A2B3;
-    padding-top: 13px;
+    padding-top: 12px;
     padding-left: 24px;
 
     &:before {
@@ -78,7 +78,30 @@
   margin-left: auto;
 
   .menu__item {
+    position: relative;
     color: #475467;
+    margin-right: 56px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-color: #DFE1E4;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:before {
+        display: none;
+      }
+    }
   }
 
   .menu__link {
@@ -93,6 +116,7 @@
 .section-characteristic {
 
 }
+
 
 // SECTION CHARACTERISTIC
 .about-us {
@@ -175,6 +199,62 @@
 }
 
 
+//SECTION DOCUMENTS
+
+.section-documents {
+  .title_xs {
+    margin-bottom: 16px;
+  }
+}
+
+.list-documents {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    display: flex;
+    padding: 22px 16px;
+    background: #F8FAFD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .description {
+      position: relative;
+      padding-left: 24px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 2px;
+        background-color: #FCC214;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+
+    .block-btn {
+      padding-left: 40px;
+      margin-left: auto;
+    }
+
+    .name-document {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+
 // SECTION 3D-VISUAL
 .section-visualization {
   padding-bottom: 0;
@@ -209,6 +289,13 @@
 sup {
   vertical-align: top;
 }
+
+
+
+
+
+
+
 
 //.slider-gallery-wrap {
 //  //position: relative;
