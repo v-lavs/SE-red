@@ -87,6 +87,20 @@ $(document).ready(function () {
             swiper: galleryThumbs,
         },
     });
+
+//    SWIPER IN POPUP
+    $('.popup-link').magnificPopup({
+        callbacks: {
+            open: function () {
+                let constructionProgress = new Swiper(".construction-progress", {
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            },
+        }
+    });
 });
 
 
