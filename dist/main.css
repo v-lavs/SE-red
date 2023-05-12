@@ -1940,6 +1940,30 @@ input:checked + label:after {
   box-shadow: rgba(252, 194, 20, 0.3) 0 0 0 3px;
 }
 
+.mfp-close-btn-in .mfp-close {
+  color: #FFFFFF;
+}
+
+.modal .construction-progress .swiper-wrapper {
+  align-items: center;
+}
+
+.modal .construction-progress .swiper-button-next,
+.modal .construction-progress .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  background-color: #FCC214;
+  opacity: 0.85;
+  border-radius: 50%;
+}
+
+.modal .construction-progress .swiper-button-next:after,
+.modal .construction-progress .swiper-button-prev:after {
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .post-list {
   display: flex;
   flex-wrap: wrap;
@@ -3003,6 +3027,20 @@ select {
 
 .construction-period-filter .wrap-select:last-child {
   margin-right: 0;
+}
+
+.construction-progress {
+  width: 100%;
+}
+
+.construction-progress .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-progress .swiper-slide img {
+  display: block;
 }
 
 .section-documents .title_xs {

@@ -1,3 +1,27 @@
-.popup{
-
+.mfp-close-btn-in .mfp-close {
+  color: #FFFFFF;
 }
+
+.modal {
+
+
+  .construction-progress {
+    .swiper-wrapper{
+      align-items: center;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 48px;
+      height: 48px;
+      background-color: #FCC214;
+      opacity: 0.85;
+      border-radius: 50%;
+      &:after{
+        color: #475467;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+

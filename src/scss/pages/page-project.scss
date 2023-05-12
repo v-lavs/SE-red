@@ -217,7 +217,17 @@
     }
   }
 }
-
+.construction-progress{
+  width: 100%;
+  .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      display: block;
+    }
+  }
+}
 //SECTION DOCUMENTS
 
 .section-documents {

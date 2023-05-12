@@ -84,7 +84,7 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
         thumbs: {
-            swiper: galleryThumbs,
+            galleryTop: galleryThumbs,
         },
     });
 
