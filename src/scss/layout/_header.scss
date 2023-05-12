@@ -15,7 +15,13 @@
       color: #1D2939;
     }
   }
-
+&.bg_active{
+  background-color: #FFFFFF;
+  color: #1D2939;
+  .menu__item{
+    color: #1D2939;
+  }
+}
   &_active {
     top: -100%;
     transform: translateY(-100%);

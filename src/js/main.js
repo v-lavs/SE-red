@@ -23,6 +23,12 @@ $(document).ready(function () {
             header.removeClass('header_active');
         }
         scrollPrev = scrolled;
+
+        if (scrolled > 100) {
+            header.addClass('bg_active');
+        } else {
+            header.removeClass('bg_active');
+        }
     });
 
 

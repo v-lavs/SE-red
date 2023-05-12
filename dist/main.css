@@ -1709,6 +1709,15 @@ input:checked + label:after {
   color: #1D2939;
 }
 
+.header.bg_active {
+  background-color: #FFFFFF;
+  color: #1D2939;
+}
+
+.header.bg_active .menu__item {
+  color: #1D2939;
+}
+
 .header_active {
   top: -100%;
   transform: translateY(-100%);
