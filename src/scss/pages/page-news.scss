@@ -9,13 +9,48 @@
   }
 }
 
-.toolbar-btn{
+.toolbar-btn {
   border: none;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
-.filter-toolbar{
+.filter-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 35px;
+
+  .wrap-select {
+    position: relative;
+    height: 32px;
+    width: 332px;
+    border: none;
+    padding-left: 32px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/img/sort.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+  .nice-select {
+    padding-left: 0;
+    padding-right: 16px;
+    height: 32px;
+
+    &:after {
+      display: none;
+    }
+  }
 }
