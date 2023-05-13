@@ -171,14 +171,29 @@ body {
 
 .dynamic-content {
   p {
+    font-size: 18px;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1.5em;
+  h1, h2 {
+    font-size: 40px;
+    margin-bottom: 46px;
+    margin-top: 46px;
+  }
+
+  h3 {
+    margin-top: 32px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 
   a {
@@ -189,20 +204,31 @@ body {
     }
   }
 
+  ol, ul {
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
   ul {
     padding-left: 11px;
-    margin-bottom: 20px;
 
     > li {
       position: relative;
       padding-left: 16px;
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &:before {
         position: absolute;
         content: '';
         display: block;
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
         border-radius: 50%;
         background-color: #3B4040;
         left: 0;
@@ -213,10 +239,18 @@ body {
 
   ol {
     position: relative;
-    padding-left: 32px;
+    padding-left: 26px;
     line-height: 1.5;
     color: #3B4040;
     counter-reset: list;
+
+    li {
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     li:before {
       position: absolute;
@@ -224,6 +258,52 @@ body {
       counter-increment: list;
       content: counters(list, '. ') '.';
     }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+
+    &.alignleft {
+      float: left;
+      margin: 12px 37px 12px 0;
+    }
+
+    &.alignright {
+      float: right;
+      margin: 4px 0 12px 12px;
+    }
+
+    &.aligncenter {
+      display: block;
+      margin: 24px auto 24px;
+      clear: both;
+    }
+  }
+
+  a {
+    color: #FCC214;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote {
+    padding: 8px 14px 8px 16px;
+    background-color: #F8FAFD;
+    border-left: 4px solid #DFE1E4;
+    margin-bottom: 16px;
   }
 }
 

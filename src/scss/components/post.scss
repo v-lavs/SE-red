@@ -28,13 +28,12 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  //max-width: 464px;
-  width: 100%;
-  min-height: 384px;
-  padding: 20px 16px;
   color: #B8C0CC;
   font-weight: 400;
   font-size: 12px;
+  width: 100%;
+  min-height: 384px;
+  padding: 20px 16px;
   border-radius: 8px;
   overflow: hidden;
 
@@ -78,7 +77,9 @@
     position: relative;
     display: inline-block;
     padding-right: 24px;
-
+    color: #B8C0CC;
+    font-weight: 400;
+    font-size: 12px;
     &:last-child {
       padding-right: 0;
 

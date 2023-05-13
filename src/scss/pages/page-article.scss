@@ -1,0 +1,29 @@
+.article-inner {
+  max-width: 870px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+article {
+  position: relative;
+  background-color: #FFFFFF;
+  margin-top: -96px;
+  padding-top: 71px;
+  padding-bottom: 64px;
+
+  .title_sm {
+    margin-bottom: 46px;
+  }
+
+  .post__info {
+    padding-top: 53px;
+  }
+}
+
+.section-related-post {
+  .title_sm {
+    margin-bottom: 24px;
+  }
+}

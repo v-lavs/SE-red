@@ -1,10 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+
+
+    <title>Стаття</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/main.css">
 </head>
+
 <body>
 
+<div class="wrapper">
+    <!--header-->
+    <header class="header  header_white">
+        <div class="container">
+            <div class="header__inner">
+                <h1><a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.svg" alt="SmartEstate" width="64" height="46">
+                </a></h1>
+                <div class="header__nav">
+                    <button type="button" aria-label="Закрити меню" class="btn_close"></button>
+                    <ul class="menu">
+                        <li class="menu__item  dropdown">
+                            <a href="#" class="menu__link">Проєкти</a>
+                            <button type="button" class="sub-menu__toggle"></button>
+                            <ul class="sub-menu">
+                                <li class="menu__item">
+                                    <a href="page-project.html" class="menu__link">
+                                        <span class="wrap-icon">
+                                             <img src="assets/img/logo-smart.svg" alt="логотип 266 SMART">
+                                        </span>
+                                        <span class="wrap-text">
+                                            266 SMART <br>
+                                            <span class="text_light">Вул. Стрийська 266</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="page-project.html" class="menu__link">
+                                        <span class="wrap-icon">
+                                            <img src="assets/img/logo-zelena.svg" alt="логотип 111 ЗЕЛЕНА">
+                                        </span>
+                                        <span class="wrap-text">
+                                            111 ЗЕЛЕНА <br>
+                                            <span class="text_light">Вул. Зелена 111</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="index.html#about" class="menu__link">Про нас</a></li>
+                        <li class="menu__item"><a href="page-news.html" class="menu__link">Новини та акції</a></li>
+                        <li class="menu__item"><a href="index.html#investments" class="menu__link">Інвестиції</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+                    </ul>
+                </div>
+                <a href="tel:+380977790707" class="header__contact">Зворотній зв’язок</a>
+
+
+                <ul class="menu menu-lang">
+                    <li class="menu__item  dropdown">
+                        <a href="#" class="menu__link">Українська</a>
+                        <button type="button" class="sub-menu__toggle"></button>
+                        <ul class="sub-menu">
+                            <li class="menu__item">
+                                <a href="page-project.html" class="menu__link">
+                                    Українська
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="page-project.html" class="menu__link">
+                                    Українська
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="page-project.html" class="menu__link">
+                                    Polski
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <button type="button" aria-label="Кнопка меню" class="btn-burger">
+                    <img src="assets/img/menu.svg" alt="кнопка бургер">Меню
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main page page-article">
+        <section class="section-banner section-banner__bg" style="background-image: url(assets/img/article-img.jpg);">
+            <div class="container">
+                <div class="wrap-link-back">
+                    <a href="index.html" class="link link-back">головна</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <article>
+                <div class="article-inner">
+                    <h2 class="title title_sm">Підвищення цін на 1 секцію</h2>
+                    <div class="dynamic-content">
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure <a href="#">tempor
+                            cupidatat</a> incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <h3>Підвищення цін на 1 секцію</h3>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <p><em>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </em></p>
+                        <img src="assets/img/img-gallery-lg.jpg" alt="" class="aligncenter">
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <blockquote>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </blockquote>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <h3>Підвищення цін на 1 секцію</h3>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <ul>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.</li>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Aliqua id fugiat nostrud
+                                irure ex duis ea quis id quis ad et.
+                            </li>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Aliqua id fugiat nostrud
+                                irure ex duis ea quis id quis ad et.
+                            </li>
+                        </ul>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <h3>Підвищення цін на 1 секцію</h3>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.</figcaption>
+                        </figure>
+
+                        <h3>Підвищення цін на 1 секцію</h3>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                        <ol>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.</li>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Aliqua id fugiat nostrud
+                                irure ex duis ea quis id quis ad et.
+                            </li>
+                            <li>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Aliqua id fugiat nostrud
+                                irure ex duis ea quis id quis ad et.
+                            </li>
+                        </ol>
+                        <p>
+                            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+                            deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+                            sint deserunt ut voluptate aute id deserunt nisi.
+                        </p>
+                    </div>
+                    <div class="post__info">
+                        <span class="post__info-item date">13 Березня 2023</span>
+                        <span class="post__info-item view">156 Переглядів</span>
+                        <span class="post__info-item author">Admin</span>
+                    </div>
+                </div>
+            </article>
+            <section class="section section-related-post">
+                <h2 class="title title_sm">Інші статті</h2>
+                <ul class="post-list related-post-list">
+                    <li class="post-list__item">
+                        <a href="page-article.html" class="post-list__link">
+                            <article class="post related-post">
+                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                                <div class="post__content">
+                                    <span class="label label_green">Zelena 111</span>
+                                    <h3 class="post__title">Підвищення цін на 1 сецію</h3>
+                                    <div class="post__info">
+                                        <span class="post__info-item date">13 Березня 2023</span>
+                                        <span class="post__info-item view">156 Переглядів</span>
+                                        <span class="post__info-item author">Admin</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="post-list__item">
+                        <a href="page-article.html" class="post-list__link">
+                            <article class="post related-post">
+                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                                <div class="post__content">
+                                    <span class="label label_green">Zelena 111</span>
+                                    <h3 class="post__title">Старт будівництва 2 секції</h3>
+                                    <div class="post__info">
+                                        <span class="post__info-item date">13 Березня 2023</span>
+                                        <span class="post__info-item view">156 Переглядів</span>
+                                        <span class="post__info-item author">Admin</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="post-list__item">
+                        <a href="page-article.html" class="post-list__link">
+                            <article class="post related-post">
+                                <img src="assets/img/img-card.jpg" alt="" class="post__thumb" width="464" height="384">
+                                <div class="post__content">
+                                    <span class="label label_yellow">Smart 266</span>
+                                    <h3 class="post__title">Запрошуємо рієлторів до співпраці</h3>
+                                    <div class="post__info">
+                                        <span class="post__info-item date">13 Березня 2023</span>
+                                        <span class="post__info-item view">156 Переглядів</span>
+                                        <span class="post__info-item author">Admin</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer__contacts">
+                    <div class="part">
+                        <div class="wrap-contact">
+                            <h3 class="title title_xs">Відділ продажу</h3>
+                            <span>м. Львів, вул. Федьковича 34Б</span>
+                        </div>
+                        <div class="wrap-contact">
+                            <a href="tel:+38(067)7790707" class="footer__link phone">+ 38 (067) 77 90 707</a>
+                            <a href="mailto:sales@smartestate.eu" class="footer__link mail">sales@smartestate.eu</a>
+                        </div>
+                        <div class="wrap-contact">
+                            <h3 class="title title_xs">Графік роботи:</h3>
+                            <span>Пн - Пт 10:00 - 18:00</span>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div class="wrap-contact">
+                            <h3 class="title title_xs">Офіс / Відділ постачання</h3>
+                            <span>м. Львів, вул. Федьковича 34Б</span>
+                        </div>
+                        <div class="wrap-contact">
+                            <a href="tel:+38(067)6381115" class="footer__link phone">+ 38 (067) 63 81 115</a>
+                            <a href="mailto:sales@smartestate.eu" class="footer__link mail">office@smartestate.eu</a>
+                        </div>
+                        <div class="wrap-contact">
+                            <h3 class="title title_xs">Графік роботи:</h3>
+                            <span>Пн - Пт 10:00 - 18:</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__social-bar">
+                    <a href="https://www.facebook.com/Smart-Estate-107188624905183" target="_blank"
+                       class="social-link">
+                        <img class="icon" src="assets/img/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/smartestate.eu/" target="_blank" class="social-link">
+                        <img class="icon" src="assets/img/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" target="_blank" class="social-link">
+                        <img class="icon" src="assets/img/youtube.svg" alt="youtube">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <span class="bottom-text">© 2023. Всі права захищені</span>
+                <span class="bottom-text">Development by <a href="https://profi-creative.com/" target="_blank"
+                                                            class="color-yellow">Profi Creative</a></span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="dist/main.js"></script>
 </body>
 </html>
