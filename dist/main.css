@@ -3532,7 +3532,7 @@ article .title_sm {
   margin-bottom: 46px;
 }
 
-article .post__info {
+.article-inner .post__info {
   padding-top: 53px;
 }
 
