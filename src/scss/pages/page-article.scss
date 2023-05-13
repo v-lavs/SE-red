@@ -1,3 +1,17 @@
+.page-article {
+  padding-top: 0;
+
+  .section-banner {
+    padding-top: 123px;
+
+    &:before {
+      background-image: linear-gradient(180deg, #101828 0%, rgba(16, 24, 40, 0) 100%);
+      background-color: transparent;
+      height: 30%;
+    }
+  }
+}
+
 .article-inner {
   max-width: 870px;
   padding: 0 20px;
@@ -6,19 +20,20 @@
   background-color: #FFFFFF;
 }
 
-article {
+.article {
   position: relative;
   background-color: #FFFFFF;
   margin-top: -96px;
   padding-top: 71px;
   padding-bottom: 64px;
 
+
   .title_sm {
     margin-bottom: 46px;
   }
 }
 
-.article-inner  .post__info {
+.article-inner .post__info {
   padding-top: 53px;
 }
 
@@ -26,4 +41,17 @@ article {
   .title_sm {
     margin-bottom: 24px;
   }
+}
+.wrap-widget-share {
+  position: sticky;
+  width: 1px;
+  height: 1px;
+  transform: translateY(115px);
+  top: 0;
+}
+.widget-share {
+  left: 14%;
+  width: 122px;
+  height: max-content;
+  text-align: right;
 }

@@ -113,7 +113,20 @@ body {
     }
   }
 }
+.section-banner.dark{
+  .wrap-link-back {
+    width: 100%;
+    margin-bottom: auto;
 
+    .link-back {
+      color: #DFE1E4;
+
+      &:after {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
 .link {
   position: relative;
   color: #1D2939;

@@ -24,7 +24,7 @@
 
 <div class="wrapper">
     <!--header-->
-    <header class="header  header_white">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <h1><a href="index.html" class="header__logo">
@@ -103,7 +103,8 @@
     </header>
 
     <main class="main page page-article">
-        <section class="section-banner section-banner__bg" style="background-image: url(assets/img/article-img.jpg);">
+        <section class="section-banner section-banner__bg dark"
+                 style="background-image: url(assets/img/article-img.jpg);">
             <div class="container">
                 <div class="wrap-link-back">
                     <a href="index.html" class="link link-back">головна</a>
@@ -112,7 +113,72 @@
         </section>
 
         <div class="container">
-            <article>
+            <article class="article">
+                <div class="wrap-widget-share">
+                    <div class="widget-share">
+                        <div class="widget-share__item">
+                            <a href="#" class="widget-share__link" aria-label="facebook">
+                    <span class="icon">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_26_6016)">
+<path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z"
+      fill="#B8C0CC"/>
+</g>
+<defs>
+<clipPath id="clip0_26_6016">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    </span>
+                            </a>
+                        </div>
+                        <div class="widget-share__item">
+                            <a href="#" class="widget-share__link" aria-label="Twitter">
+                     <span class="icon">
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+<path d="M22 1.00029C21.0424 1.67577 19.9821 2.1924 18.86 2.53029C18.2577 1.8378 17.4573 1.34698 16.567 1.12422C15.6767 0.90145 14.7395 0.957486 13.8821 1.28474C13.0247 1.612 12.2884 2.19469 11.773 2.95401C11.2575 3.71332 10.9877 4.61263 11 5.53029V6.53029C9.24263 6.57586 7.50127 6.1861 5.93101 5.39574C4.36074 4.60537 3.01032 3.43893 2 2.00029C2 2.00029 -2 11.0003 7 15.0003C4.94053 16.3983 2.48716 17.0992 0 17.0003C9 22.0003 20 17.0003 20 5.50029C19.9991 5.22174 19.9723 4.94388 19.92 4.67029C20.9406 3.66378 21.6608 2.393 22 1.00029Z"
+      fill="#FCC214"/>
+</svg>
+                     </span>
+                            </a>
+                        </div>
+                        <div class="widget-share__item">
+                            <a href="#" class="widget-share__link" aria-label="linkedin">
+                     <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4C2 2.89543 2.89543 2 4 2C5.10457 2 6 2.89543 6 4ZM16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8ZM6 21V9H2V21H6Z"
+      fill="#475467"/>
+</g>
+</svg>
+                     </span>
+                            </a>
+                        </div>
+                        <div class="widget-share__item">
+                            <a href="#" class="widget-share__link print" aria-label="print">
+                     <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<path d="M6 9V2H18V9" stroke="#475467" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18"
+      fill="#475467"/>
+<path d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18"
+      stroke="#475467" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 14H6V22H18V14Z" fill="white" stroke="#475467" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</g>
+</svg>
+                     </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="article-inner">
                     <h2 class="title title_sm">Підвищення цін на 1 секцію</h2>
                     <div class="dynamic-content">
@@ -212,6 +278,7 @@
                         <span class="post__info-item view">156 Переглядів</span>
                         <span class="post__info-item author">Admin</span>
                     </div>
+
                 </div>
             </article>
             <section class="section section-related-post">
