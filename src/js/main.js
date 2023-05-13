@@ -95,7 +95,7 @@ $(document).ready(function () {
         delegate: 'a',
         type: 'image',
         gallery: {enabled: true},
-        removalDelay: 3500,
+        removalDelay: 600,
         callbacks: {
             beforeOpen: function() {
 
