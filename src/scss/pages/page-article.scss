@@ -21,6 +21,7 @@
 }
 
 .article {
+  display: flex;
   position: relative;
   background-color: #FFFFFF;
   margin-top: -96px;
@@ -42,16 +43,51 @@
     margin-bottom: 24px;
   }
 }
+
 .wrap-widget-share {
   position: sticky;
   width: 1px;
-  height: 1px;
-  transform: translateY(115px);
+  height: max-content;
   top: 0;
 }
+
 .widget-share {
+  position: sticky;
   left: 14%;
   width: 122px;
-  height: max-content;
   text-align: right;
+  transform: translateY(115px);
+
+  &__item {
+    margin-bottom: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    transition: .35s;
+    &:hover,
+    &:focus{
+      svg path{
+        fill: #FCC214;
+        stroke: #FCC214;
+      }
+      .fill-white{
+        fill: white;
+      }
+    }
+  }
 }
