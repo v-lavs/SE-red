@@ -38,15 +38,22 @@ $(document).ready(function () {
 
     $('.btn-burger').on('click', function (e) {
         e.preventDefault();
-        nav.toggleClass('open');
-        $(this).toggleClass('open');
+        nav.addClass('open');
+        // $(this).addClass('open');
+        $('.backdrop').fadeIn;
         $('body').toggleClass('modal_open');
     });
 
-    $('.menu__link').click(function (e) {
+    $('.menu__link, .btn_close, .backdrop').click(function (e) {
         $('.btn-burger').removeClass('open');
         nav.removeClass('open');
+        $('.backdrop').fadeOut;
         $('body').removeClass('modal_open');
+    });
+
+    //NOTIFICATION CLOSE
+    $('.notification__close').on('click', function (e) {
+        $('.wrap-notification').fadeOut();
     });
 
 //SWITCH NEWS-ACTION
@@ -97,7 +104,7 @@ $(document).ready(function () {
         gallery: {enabled: true},
         removalDelay: 600,
         callbacks: {
-            beforeOpen: function() {
+            beforeOpen: function () {
 
                 this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
                 this.st.mainClass = this.st.el.attr('data-effect');
@@ -117,10 +124,47 @@ $(document).ready(function () {
                         prevEl: ".swiper-button-prev",
                     },
                 });
+                $('body').toggleClass('modal_open');
             },
+            close: function () {
+                $('body').removeClass('modal_open');
+            }
         }
     });
 
+// POPUP FEEDBACK
+    $('.trigger-popup').on('click', function (e) {
+        e.preventDefault();
+       $('.popup-feedback').addClass('open_modal');
+        $('.backdrop').fadeIn;
+        $('body').toggleClass('modal_open');
+    });
+
+    $('.popup .btn_close').click(function (e) {
+        $('.popup').removeClass('open_modal');
+        $('.backdrop').fadeOut;
+        $('body').removeClass('modal_open');
+    });
+
+    // INTL TEL
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        initialCountry:"ua",
+        preferredCountries: ["ua","pl" ],
+
+        // utilsScript: "../lib/build/js/utils.js"
+    });
+    $('.iti__flag-container').click(function() {
+
+        var countryCode = $('.iti__selected-flag').attr('title');
+
+        var countryCode = countryCode.replace(/[^0-9]/g,'')
+
+        $('#phone').val("");
+
+        $('#phone').val("+" +countryCode+"  "+ $('#phone').val());
+
+    });
 });
 
 

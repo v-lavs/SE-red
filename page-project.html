@@ -12,6 +12,7 @@
 
     <title>266 SMART</title>
 
+    <link rel="stylesheet" href="lib/intl-tel-input/build/css/intlTelInput.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
@@ -69,7 +70,7 @@
                     </ul>
                 </div>
 
-                <a href="tel:+380977790707" class="header__contact">Зворотній зв’язок</a>
+                <a href="#popupFeedback" class="header__contact trigger-popup">Зворотній зв’язок</a>
 
                 <ul class="menu menu-lang">
                     <li class="menu__item  dropdown">
@@ -101,10 +102,11 @@
                 </button>
             </div>
         </div>
+        <div class="backdrop"></div>
     </header>
 
     <main class="main page page-project">
-        <section class="section-banner section-banner__bg">
+        <section class="section-banner section-banner__bg dark">
             <video class="background-video" autoplay="" loop="" muted=""
                    poster="assets/img/poster-banner-video-bg.jpg">
                 <source src="assets/video/P1390001.mp4" type="video/mp4">
@@ -668,6 +670,8 @@
     </div>
 </div>
 
+
+<script src="lib/intl-tel-input/build/js/intlTelInput.min.js"></script>
 <script src="dist/main.js"></script>
 </body>
 </html>

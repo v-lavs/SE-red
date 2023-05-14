@@ -1406,6 +1406,10 @@ body.modal_open {
   height: 100%;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .d-flex {
   display: flex;
 }
@@ -2104,15 +2108,56 @@ body.modal_open {
   background-size: contain;
 }
 
+.iti__flag {
+  background-image: url("../lib/intl-tel-input/build/img/flags.png");
+}
+
+.iti {
+  width: 100%;
+}
+
+.form {
+  text-align: left;
+  color: #475467;
+  font-size: 18px;
+}
+
+.form__group {
+  position: relative;
+  padding-top: 24px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #DFE1E4;
+  border-radius: 4px;
+  padding: 16px 17px;
+}
+
+.label-input {
+  position: absolute;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #FCFCFD;
+  transform: translate(7px, -50%);
+  z-index: 1;
+}
+
+::placeholder {
+  color: #B8C0CC;
+}
+
 /*   SWITCH-BUTTON  */
 
-input[type=checkbox] {
+.switch-toggle input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.switch-toggle label {
   cursor: pointer;
   text-indent: -9999px;
   width: 58px;
@@ -2124,7 +2169,7 @@ label {
   border: 5px solid #FCC214;
 }
 
-label:after {
+.switch-toggle label:after {
   content: '';
   position: absolute;
   top: 2px;
@@ -2136,11 +2181,11 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+.switch-toggle input:checked + label {
   background-color: #FFFFFF;
 }
 
-input:checked + label:after {
+.switch-toggle input:checked + label:after {
   left: calc(100% - 2px);
   transform: translateX(-100%);
 }
@@ -2175,29 +2220,48 @@ input:checked + label:after {
   font-weight: 600;
 }
 
-.popup-banner {
+.popup {
   background-color: #fff;
   position: fixed;
-  max-width: 1196px;
-  width: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
   opacity: 0;
   transition: opacity .5s linear;
-  overflow: hidden;
+  visibility: hidden;
 }
 
-.popup-banner.open_modal {
+.popup.open_modal {
   opacity: 1;
-  overflow: visible;
-  z-index: 9999;
+  visibility: visible;
+  z-index: 400;
+}
+
+.popup-banner {
+  max-width: 1196px;
+  width: 100%;
+}
+
+.popup-banner__header {
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  padding-top: 30px;
+}
+
+.popup-banner__header .btn_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 2;
 }
 
 .popup-banner__body {
   position: relative;
   padding-top: 51.75%;
+  background-color: #DFE1E4;
 }
 
 .popup-banner__body img {
@@ -2220,24 +2284,82 @@ input:checked + label:after {
   color: #A6A6A6;
 }
 
-.modal-gallery-progress .construction-progress .swiper-wrapper {
+.popup-banner .btn_warm {
+  min-width: 445px;
+  margin-bottom: 4px;
+}
+
+.popup-banner .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  filter: brightness(0) invert(1);
+}
+
+.popup-banner .icon img {
+  width: 100%;
+}
+
+.popup-feedback {
+  height: 490px;
+  max-width: 756px;
+  width: 100%;
+  padding: 0 32px 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.popup-feedback .popup-form {
+  text-align: left;
+}
+
+.popup-feedback__body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-feedback__thumb {
+  width: 522px;
+  height: 394px;
+  background-color: #D9D9D9;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 38px;
+}
+
+.popup-feedback__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0;
+  text-align: right;
+}
+
+.popup-feedback .btn_close {
+  display: block;
+  filter: grayscale(1) invert(0.31);
+}
+
+.popup-feedback .btn_submit {
+  margin-top: 24px;
+  margin-bottom: 21px;
+  min-width: 0;
+  width: 100%;
+}
+
+.popup-feedback .sub-title {
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.popup-feedback .form__group {
+  width: 100%;
+}
+
+.modal-gallery-progress .swiper-wrapper {
   align-items: center;
-}
-
-.modal-gallery-progress .construction-progress .swiper-button-next,
-.modal-gallery-progress .construction-progress .swiper-button-prev {
-  width: 48px;
-  height: 48px;
-  background-color: #FCC214;
-  opacity: 0.85;
-  border-radius: 50%;
-}
-
-.modal-gallery-progress .construction-progress .swiper-button-next:after,
-.modal-gallery-progress .construction-progress .swiper-button-prev:after {
-  color: #475467;
-  font-size: 10px;
-  font-weight: 600;
 }
 
 .wrap-notification {
@@ -2252,7 +2374,7 @@ input:checked + label:after {
   position: relative;
   display: flex;
   max-width: 1196px;
-  width: 100%;
+  width: 83%;
   background: #475467;
   border-radius: 4px;
 }
@@ -2275,7 +2397,7 @@ input:checked + label:after {
   color: #F8FAFD;
   font-weight: 400;
   font-size: 12px;
-  padding: 12px 24px 12px 48px;
+  padding: 12px 52px 12px 48px;
 }
 
 .notification-banner__text {
@@ -2285,7 +2407,7 @@ input:checked + label:after {
 .notification-banner .btn_close {
   position: absolute;
   display: block;
-  top: 13px;
+  top: 8px;
   right: 24px;
 }
 
@@ -2526,6 +2648,11 @@ button.mfp-arrow:after {
   right: 10px;
 }
 
+.mfp-bg,
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.45 !important;
+}
+
 .mfp-content {
   position: static;
 }
@@ -2582,7 +2709,7 @@ button.mfp-arrow:after {
   right: 0;
   top: 0;
   background-color: transparent;
-  z-index: 900;
+  z-index: 300;
   color: #F8FAFD;
   font-size: 14px;
 }
@@ -2695,6 +2822,17 @@ button.mfp-arrow:after {
 
 .menu-lang .menu__link {
   margin: 0;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 500;
 }
 
 .footer {
@@ -3243,8 +3381,8 @@ button.mfp-arrow:after {
 
 .page-project .section-banner .container {
   padding-top: 123px;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .page-project .post-list {
@@ -3823,14 +3961,36 @@ sup {
 }
 
 @media only screen and (max-width: 1440px) {
+  .popup-banner {
+    max-width: 996px;
+  }
+
+  .popup-banner__body {
+    padding-top: 48.75%;
+  }
+
   .container {
     max-width: 1280px;
+    background: rosybrown;
   }
 }
 
 @media only screen and (max-width: 1160px) {
+  .popup-banner {
+    max-width: 930px;
+  }
+
+  .popup-banner__body {
+    padding-top: 52.5%;
+  }
+
+  .notification-banner {
+    width: 100%;
+  }
+
   .container {
     max-width: 1200px;
+    background: lightgreen;
   }
 }
 
@@ -3907,8 +4067,17 @@ sup {
     display: none;
   }
 
+  .popup-banner {
+    max-width: 754px;
+  }
+
+  .popup-banner__body {
+    padding-top: 48.75%;
+  }
+
   .container {
     max-width: 830px;
+    background: coral;
   }
 
   .header__inner {
@@ -3917,7 +4086,7 @@ sup {
   }
 
   .header__nav {
-    position: absolute;
+    position: fixed;
     left: 10px;
     right: 10px;
     top: 40px;
@@ -3930,7 +4099,7 @@ sup {
   }
 
   .header__nav.open {
-    z-index: -1;
+    z-index: 2;
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
@@ -4020,6 +4189,49 @@ sup {
 }
 
 @media only screen and (max-width: 767px) {
+  .popup-banner {
+    max-width: 328px;
+  }
+
+  .popup-banner .btn_warm {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .popup-banner__footer {
+    padding: 15px;
+  }
+
+  .popup-banner__body {
+    padding-top: 100%;
+    min-height: 384px;
+  }
+
+  .popup-feedback {
+    max-width: 464px;
+  }
+
+  .popup-feedback__thumb {
+    display: none;
+  }
+
+  .notification-banner__thumb {
+    display: none;
+  }
+
+  .notification-banner__body {
+    padding-left: 24px;
+  }
+
+  .notification-banner .btn_close {
+    right: 8px;
+  }
+
+  .container {
+    width: 100%;
+    background-color: #88bfff;
+  }
+
   .header__logo {
     max-width: 128px;
     height: 16px;
@@ -4031,16 +4243,35 @@ sup {
     font-size: 15px;
   }
 
-  .container {
-    width: 100%;
+  .wrap-notification {
+    top: 95px;
+  }
+
+  .notification-banner__body {
+    padding-left: 8px;
+  }
+
+  .notification-banner__text {
+    max-width: 378px;
   }
 
   .container {
     padding: 0 16px;
+    background: khaki;
   }
 
   .menu .menu__item {
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .popup-banner {
+    max-width: 930px;
+  }
+
+  .popup-banner__body {
+    padding-top: 49%;
   }
 }

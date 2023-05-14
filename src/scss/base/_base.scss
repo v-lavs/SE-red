@@ -12,7 +12,9 @@ body {
     height: 100%;
   }
 }
-
+.wrapper{
+  overflow: hidden;
+}
 .d-flex {
   display: flex;
 }

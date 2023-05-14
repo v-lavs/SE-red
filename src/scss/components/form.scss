@@ -1,0 +1,81 @@
+
+.iti__flag {background-image: url("../lib/intl-tel-input/build/img/flags.png");}
+.iti{
+  width: 100%;
+}
+
+.form {
+  text-align: left;
+  color: #475467;
+  font-size: 18px;
+
+  &__group {
+    position: relative;
+    padding-top: 24px;
+  }
+}
+
+input {
+  width: 100%;
+  border: 1px solid #DFE1E4;
+  border-radius: 4px;
+  padding: 16px 17px;
+}
+
+.label-input {
+  position: absolute;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #FCFCFD;
+  transform: translate(7px, -50%);
+  z-index: 1;
+}
+
+::placeholder {
+  color: #B8C0CC;
+}
+
+/*   SWITCH-BUTTON  */
+.switch-toggle {
+  input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 58px;
+    height: 32px;
+    background: rgba(252, 194, 20, .5);
+
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    border: 5px solid #FCC214;
+  }
+
+  label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: #FCC214;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  input:checked + label {
+    background-color: #FFFFFF;
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+}

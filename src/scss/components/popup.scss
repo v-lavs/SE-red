@@ -1,26 +1,45 @@
-.popup-banner {
+.popup {
   background-color: #fff;
   position: fixed;
-  max-width: 1196px;
-  width: 100%;
-  //max-height: 619px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
   opacity: 0;
   transition: opacity .5s linear;
-  overflow: hidden;
+  visibility: hidden;
 
   &.open_modal {
     opacity: 1;
-    overflow: visible;
-    z-index: 9999;
+    visibility: visible;
+    z-index: 400;
+  }
+}
+
+
+.popup-banner {
+  max-width: 1196px;
+  width: 100%;
+
+  &__header {
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    padding-top: 30px;
+
+    .btn_close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      z-index: 2;
+    }
   }
 
   &__body {
     position: relative;
     padding-top: 51.75%;
+    background-color: #DFE1E4;
 
     img {
       position: absolute;
@@ -42,29 +61,87 @@
     font-size: 12px;
     color: #A6A6A6;
   }
+
+  .btn_warm {
+    min-width: 445px;
+    margin-bottom: 4px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
+.popup-feedback {
+  height: 490px;
+  max-width: 756px;
+  width: 100%;
+  padding: 0 32px 40px;
+  font-size: 14px;
+  text-align: center;
+
+  .popup-form {
+    text-align: left;
+  }
+
+  &__body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__thumb {
+    width: 522px;
+    height: 394px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 38px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    text-align: right;
+  }
+
+  .btn_close {
+    display: block;
+    filter: grayscale(1) invert(.31);
+  }
+
+  .btn_submit {
+    margin-top: 24px;
+    margin-bottom: 21px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+
+  .form__group {
+    width: 100%;
+
+  }
+
+}
 
 .modal-gallery-progress {
-  .construction-progress {
-    .swiper-wrapper {
-      align-items: center;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      width: 48px;
-      height: 48px;
-      background-color: #FCC214;
-      opacity: 0.85;
-      border-radius: 50%;
-
-      &:after {
-        color: #475467;
-        font-size: 10px;
-        font-weight: 600;
-      }
-    }
+  .swiper-wrapper {
+    align-items: center;
   }
 }
 
@@ -80,7 +157,7 @@
   position: relative;
   display: flex;
   max-width: 1196px;
-  width: 100%;
+  width: 83%;
   background: #475467;
   border-radius: 4px;
 
@@ -102,7 +179,7 @@
     color: #F8FAFD;
     font-weight: 400;
     font-size: 12px;
-    padding: 12px 24px 12px 48px;
+    padding: 12px 52px 12px 48px;
   }
 
   &__text {
@@ -112,14 +189,105 @@
   .btn_close {
     position: absolute;
     display: block;
-    top: 13px;
+    top: 8px;
     right: 24px;
   }
 }
 
+@include respond-to($xl) {
+  .popup-banner {
+    max-width: 996px;
 
+    &__body {
+      padding-top: 48.75%;
+    }
+  }
+}
 
+@include respond-to($lg) {
+  .popup-banner {
+    max-width: 930px;
 
+    &__body {
+      padding-top: 52.5%;
+    }
+  }
 
+  .notification-banner {
+    width: 100%;
+  }
+}
 
+@include respond-to($md) {
+  .popup-banner {
+    max-width: 754px;
 
+    &__body {
+      padding-top: 48.75%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .popup-banner {
+    max-width: 930px;
+
+    &__body {
+      padding-top: 49%;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .popup-banner {
+    max-width: 328px;
+
+    .btn_warm {
+      min-width: 0;
+      width: 100%;
+    }
+
+    &__footer {
+      padding: 15px;
+    }
+
+    &__body {
+      padding-top: 100%;
+      min-height: 384px;
+    }
+  }
+  .popup-feedback{
+    max-width: 464px;
+    &__thumb{
+      display: none;
+    }
+  }
+  .notification-banner {
+    &__thumb {
+      display: none;
+    }
+
+    &__body {
+      padding-left: 24px;
+    }
+
+    .btn_close {
+      right: 8px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .wrap-notification {
+    top: 95px;
+  }
+  .notification-banner {
+    &__body {
+      padding-left: 8px;
+    }
+
+    &__text {
+      max-width: 378px;
+    }
+  }
+}

@@ -12,6 +12,7 @@
 
     <title>Стаття</title>
 
+    <link rel="stylesheet" href="lib/intl-tel-input/build/css/intlTelInput.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
@@ -67,7 +68,7 @@
                         <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
                     </ul>
                 </div>
-                <a href="tel:+380977790707" class="header__contact">Зворотній зв’язок</a>
+                <a href="#popupFeedback" class="header__contact trigger-popup">Зворотній зв’язок</a>
 
 
                 <ul class="menu menu-lang">
@@ -100,6 +101,7 @@
                 </button>
             </div>
         </div>
+        <div class="backdrop"></div>
     </header>
 
     <main class="main page page-article">
@@ -460,8 +462,37 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup popup-feedback" id="popupFeedback">
+        <div class="popup-feedback__header">
+            <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+        </div>
+        <div class="popup-feedback__body">
+            <div class="popup-feedback__content">
+                <form action="#" method="post" class="popup-form">
+                    <h3 class="title title_xs">Зворотній дзвінок</h3>
+                    <div class="sub-title">Надішліть Ваш номер телефону і ми передзвонимо протягом 1 години.</div>
+                    <div class="form__group">
+                        <label for="phone" class="label-input">Номер телефону</label>
+                        <input id="phone" type="tel" placeholder="+ 38 (063) 42 91 572">
+                        <!--                        <span id="valid-msg" class="hide">✓ Valid</span>-->
+                        <!--                        <span id="error-msg" class="hide"></span>-->
+                    </div>
+                    <div class="form__group">
+                        <label for="name" class="label-input">Ваше ім’я</label>
+                        <input id="name" type="text" placeholder="Як до Вас звертатись">
+                    </div>
+                    <button class="btn btn_warm btn_submit">Замовити дзвінок</button>
+                </form>
+                <p>Натискаючи на кнопку “Замовити дзвінок” ви підтверджуєте згоду на <strong>обробку персональних
+                    даних</strong></p>
+            </div>
+            <div class="popup-feedback__thumb" style="background-image: url(assets/img/img-card.jpg);"></div>
+        </div>
+    </div>
 </div>
 
+<script src="lib/intl-tel-input/build/js/intlTelInput.min.js"></script>
 <script src="dist/main.js"></script>
 </body>
 </html>

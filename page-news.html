@@ -12,13 +12,14 @@
 
     <title>Новини/Акції</title>
 
+    <link rel="stylesheet" href="lib/intl-tel-input/build/css/intlTelInput.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
 
     <link rel="stylesheet" href="./dist/main.css">
-   </head>
+</head>
 
 <body>
 
@@ -67,7 +68,7 @@
                         <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
                     </ul>
                 </div>
-                <a href="tel:+380977790707" class="header__contact">Зворотній зв’язок</a>
+                <a href="#popupFeedback" class="header__contact trigger-popup">Зворотній зв’язок</a>
 
 
                 <ul class="menu menu-lang">
@@ -100,6 +101,7 @@
                 </button>
             </div>
         </div>
+        <div class="backdrop"></div>
     </header>
 
     <main class="main page page-news">
@@ -133,8 +135,10 @@
 
                 <div class="part_right">
                     <div class="sort-buttons">
-                        <button type="button" class="toolbar-btn label label_green"><span class="text">Zelena 111</span></button>
-                        <button type="button" class="toolbar-btn label label_yellow"><span class="text">Smart 266</span></button>
+                        <button type="button" class="toolbar-btn label label_green"><span class="text">Zelena 111</span>
+                        </button>
+                        <button type="button" class="toolbar-btn label label_yellow"><span class="text">Smart 266</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -446,6 +450,7 @@
     </footer>
 </div>
 
+<script src="lib/intl-tel-input/build/js/intlTelInput.min.js"></script>
 <script src="dist/main.js"></script>
 </body>
 </html>

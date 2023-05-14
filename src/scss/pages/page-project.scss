@@ -4,8 +4,8 @@
   .section-banner {
     .container {
       padding-top: 123px;
-      flex-wrap: wrap;
-      align-items: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
 
