@@ -132,8 +132,11 @@
 
 @include respond-to($lg) {
   .header {
+    .container {
+      max-width: 100%;
+    }
 
-    .top-bar{
+    .top-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -157,7 +160,8 @@
   }
   .header__inner {
     position: relative;
-    .btn_close{
+
+    .btn_close {
       display: block;
       filter: contrast(0.5);
     }
@@ -179,7 +183,7 @@
     max-width: 450px;
     width: 100%;
     max-height: 100%;
-    padding:18px 24px 56px;
+    padding: 18px 24px 56px;
     color: #1D2939;
     font-weight: 600;
     font-size: 14px;
@@ -192,7 +196,8 @@
       visibility: visible;
       transform: translateY(0px);
     }
-    .menu{
+
+    .menu {
       margin-bottom: auto;
     }
   }
@@ -219,6 +224,7 @@
     padding-top: 30px;
     padding-left: 48px;
     margin: 0 auto 32px;
+
     &.current {
       font-weight: 600;
     }
@@ -255,7 +261,7 @@
   .menu-lang {
     display: none;
   }
- .header .mob-content {
+  .header .mob-content {
     display: block;
   }
   .btn-burger {

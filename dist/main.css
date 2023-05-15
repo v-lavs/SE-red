@@ -1425,7 +1425,7 @@ body.modal_open {
   font-weight: 600;
   font-size: 12px;
   line-height: 1;
-  padding: 8px 16px;
+  padding: 9px 16px 10px;
   margin-bottom: 8px;
 }
 
@@ -3134,7 +3134,7 @@ button.mfp-arrow:after {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 48px;
+  bottom: 50px;
   right: 0;
   z-index: 1;
 }
@@ -4214,6 +4214,10 @@ sup {
     background: lightgreen;
   }
 
+  .header .container {
+    max-width: 100%;
+  }
+
   .header .top-bar {
     display: flex;
     align-items: center;
@@ -4562,6 +4566,10 @@ sup {
     right: 8px;
   }
 
+  .wrap-notification {
+    top: 95px;
+  }
+
   .container {
     width: 100%;
     background-color: #88bfff;
@@ -4610,6 +4618,36 @@ sup {
     display: none;
   }
 
+  .section-banner .title_md {
+    font-size: 50px;
+  }
+
+  .section-banner .location {
+    font-size: 16px;
+  }
+
+  .section-banner .btn_stroke {
+    position: relative;
+    font-size: 0;
+    width: 76px;
+    height: 56px;
+    min-width: 0;
+  }
+
+  .section-banner .btn_stroke:before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url(../assets/img/info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    filter: brightness(0) invert(1);
+  }
+
   .section-about .wrap-img {
     width: 398px;
     height: 390px;
@@ -4640,6 +4678,12 @@ sup {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  .menu-main {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   body {
     font: 400 16px/1.4 "Raleway", sans-serif;
@@ -4655,6 +4699,14 @@ sup {
     display: none;
   }
 
+  .title_md {
+    font-size: 32px;
+  }
+
+  .title_sm {
+    font-size: 24px;
+  }
+
   .title_xs {
     font-size: 18px;
   }
@@ -4663,8 +4715,10 @@ sup {
     font-size: 15px;
   }
 
-  .wrap-notification {
-    top: 95px;
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    bottom: -20px;
   }
 
   .notification-banner__body {
@@ -4695,6 +4749,14 @@ sup {
   .container {
     padding: 0 16px;
     background: khaki;
+  }
+
+  .section-banner .title_md {
+    font-size: 32px;
+  }
+
+  .section-banner__bg .container {
+    min-height: 600px;
   }
 
   .section-about .wrap-img {
