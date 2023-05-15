@@ -142,13 +142,13 @@ $(document).ready(function () {
     $('.trigger-popup').click(function (e) {
         e.preventDefault();
         $('.popup-feedback').addClass('open_modal');
-        $('.overlay').fadeIn;
+        $('.overlay').fadeIn();
         $('body').toggleClass('modal_open');
     });
 
     $('.popup .btn_close').click(function (e) {
         $('.popup').removeClass('open_modal');
-        $('.overlay').fadeOut;
+        $('.overlay').fadeOut();
         $('body').removeClass('modal_open');
     });
 
@@ -159,7 +159,7 @@ $(document).ready(function () {
 
     // var input = document.querySelector("#phone-input");
     var iti = window.intlTelInput(input, {
-        initialCountry: "auto",
+        initialCountry: "ua",
         separateDialCode: true,
         preferredCountries: ["ua", "pl"], // You can customize the preferred countries list
         geoIpLookup: callback => {
