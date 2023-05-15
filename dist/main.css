@@ -1406,6 +1406,10 @@ body.modal_open {
   height: 100%;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .d-flex {
   display: flex;
 }
@@ -1727,14 +1731,14 @@ body.modal_open {
   margin-bottom: 16px;
 }
 
-.block-img-sm-right,
-.block-img-sm-left {
+.dynamic-content .block-img-sm-right,
+.dynamic-content .block-img-sm-left {
   display: flex;
   margin: 24px 0;
 }
 
-.block-img-sm-right .part,
-.block-img-sm-left .part {
+.dynamic-content .block-img-sm-right .part,
+.dynamic-content .block-img-sm-left .part {
   position: relative;
   margin-right: 24px;
   background: #F2F4F7;
@@ -1742,8 +1746,8 @@ body.modal_open {
   overflow: hidden;
 }
 
-.block-img-sm-right .part img,
-.block-img-sm-left .part img {
+.dynamic-content .block-img-sm-right .part img,
+.dynamic-content .block-img-sm-left .part img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1754,36 +1758,36 @@ body.modal_open {
   object-fit: cover;
 }
 
-.block-img-sm-right .part:last-child,
-.block-img-sm-left .part:last-child {
+.dynamic-content .block-img-sm-right .part:last-child,
+.dynamic-content .block-img-sm-left .part:last-child {
   margin-right: 0;
 }
 
-.block-img-sm-right .part_left {
+.dynamic-content .block-img-sm-right .part_left {
   padding-top: 46%;
   width: 56%;
 }
 
-.block-img-sm-right .part_right {
+.dynamic-content .block-img-sm-right .part_right {
   width: 41%;
 }
 
-.block-img-sm-left .part_left {
+.dynamic-content .block-img-sm-left .part_left {
   width: 41%;
   margin-right: 24px;
 }
 
-.block-img-sm-left .part_right {
+.dynamic-content .block-img-sm-left .part_right {
   padding-top: 46%;
   width: 56%;
   margin-right: 0;
 }
 
-.list-files {
+.dynamic-content .list-files {
   margin-bottom: 24px;
 }
 
-.list-files__item {
+.dynamic-content .list-files__item {
   display: flex;
   align-items: center;
   padding: 16px 8px 16px 16px;
@@ -1791,21 +1795,21 @@ body.modal_open {
   margin-bottom: 8px;
 }
 
-.list-files__item:last-child {
+.dynamic-content .list-files__item:last-child {
   margin-bottom: 0;
 }
 
-.list-files__item:hover svg path,
-.list-files__item:focus svg path {
+.dynamic-content .list-files__item:hover svg path,
+.dynamic-content .list-files__item:focus svg path {
   fill: #FCC214;
 }
 
-.list-files .description {
+.dynamic-content .list-files .description {
   flex-grow: 1;
   margin-right: 40px;
 }
 
-.list-files .name-file {
+.dynamic-content .list-files .name-file {
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
@@ -1813,19 +1817,19 @@ body.modal_open {
   margin: 0;
 }
 
-.list-files .text {
+.dynamic-content .list-files .text {
   font-weight: 400;
   font-size: 12px;
 }
 
-.list-files .btn_download {
+.dynamic-content .list-files .btn_download {
   width: 40px;
   height: 24px;
   padding: 8px;
   margin-left: auto;
 }
 
-.list-files .btn_download svg {
+.dynamic-content .list-files .btn_download svg {
   display: block;
   width: 100%;
 }
@@ -3262,6 +3266,10 @@ button.mfp-arrow:after {
   margin-right: 24px;
   clip-path: polygon(94% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
   overflow: hidden;
+  background-image: url(../assets/img/quadrat.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 10px 10px;
 }
 
 .achievements__item:before,
@@ -3270,9 +3278,11 @@ button.mfp-arrow:after {
   content: '';
   display: block;
   width: 10px;
-  top: 0;
+  height: 10px;
   bottom: 0;
-  background-image: linear-gradient(to bottom, #DFE1E4 0 9%, #F2F4F7 9% 91%, #DFE1E4 91% 100%);
+  background-image: url(../assets/img/quadrat.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
   z-index: 1;
 }
 
@@ -4097,6 +4107,16 @@ sup {
 }
 
 @media only screen and (max-width: 1200px) {
+  .section__heading {
+    text-align: center;
+  }
+
+  .section__heading .title_lg {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
   .menu {
     text-align: left;
     flex-direction: column;
@@ -4189,7 +4209,7 @@ sup {
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 834px;
     background: lightgreen;
   }
 
@@ -4324,6 +4344,46 @@ sup {
     flex-wrap: wrap;
     padding-bottom: 32px;
   }
+
+  .section-about .part {
+    width: 100%;
+  }
+
+  .section-about .section__content {
+    text-align: center;
+    max-width: 754px;
+    margin: 0 auto;
+  }
+
+  .section-about .wrap-img {
+    margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .experience .title {
+    margin-bottom: 53px;
+    text-align: center;
+  }
+
+  .achievements__item {
+    flex-direction: column;
+    text-align: center;
+    max-width: 235px;
+    padding: 24px 43px;
+    clip-path: polygon(90% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+  }
+
+  .achievements__text {
+    width: 100%;
+  }
+
+  .achievements .number {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 8px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -4336,7 +4396,6 @@ sup {
   }
 
   .container {
-    max-width: 830px;
     background: coral;
   }
 
@@ -4460,6 +4519,10 @@ sup {
 }
 
 @media only screen and (max-width: 767px) {
+  .title_lg {
+    font-size: 66px;
+  }
+
   .popup-banner {
     max-width: 328px;
   }
@@ -4545,23 +4608,50 @@ sup {
   .footer .bottom-text:after {
     display: none;
   }
+
+  .section-about .wrap-img {
+    width: 398px;
+    height: 390px;
+    padding: 22px 92px;
+  }
+
+  .section-about .wrap-img img {
+    margin-bottom: 10px;
+  }
+
+  .achievements {
+    flex-direction: column;
+  }
+
+  .achievements__item {
+    width: 100%;
+    flex-direction: row;
+    clip-path: polygon(94% 0, 100% 22%, 100% 100%, 0 100%, 0 0);
+    margin-bottom: 16px;
+    text-align: revert;
+    margin-right: auto;
+    max-width: 450px;
+    margin-left: auto;
+  }
+
+  .achievements__item:last-child {
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   body {
     font: 400 16px/1.4 "Raleway", sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
   }
 
-  .title_lg {
-    font-size: 120px;
+  .section__heading {
+    padding: 0;
+    margin-bottom: 32px;
   }
 
-  .title_md {
-    font-size: 64px;
-  }
-
-  .title_sm {
-    font-size: 40px;
+  .section__heading .title_lg {
+    display: none;
   }
 
   .title_xs {
@@ -4604,6 +4694,21 @@ sup {
   .container {
     padding: 0 16px;
     background: khaki;
+  }
+
+  .section-about .wrap-img {
+    width: 327px;
+    height: 313px;
+    padding: 10px 74px;
+    margin: 40px auto 32px;
+  }
+
+  .section-about .wrap-img img {
+    margin-bottom: 5px;
+  }
+
+  .experience .title {
+    margin-bottom: 24px;
   }
 }
 

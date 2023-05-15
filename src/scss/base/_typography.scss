@@ -44,23 +44,34 @@
     text-transform: none;
   }
 }
-@include respond-to($xs){
+
+@include respond-to($sm){
   .title {
 
     &_lg {
-      font-size: 120px;
-
+      font-size: 66px;
     }
+  }
+}
 
-    &_md {
 
-      font-size: 64px;
-    }
-
-    &_sm {
-      font-size: 40px;
-
-    }
+@include respond-to($xs){
+  .title {
+    //
+    //&_lg {
+    //  font-size: 120px;
+    //
+    //}
+    //
+    //&_md {
+    //
+    //  font-size: 64px;
+    //}
+    //
+    //&_sm {
+    //  font-size: 40px;
+    //
+    //}
 
     &_xs {
       font-size: 18px;
