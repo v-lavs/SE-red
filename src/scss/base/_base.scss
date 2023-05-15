@@ -13,7 +13,7 @@ body {
   }
 }
 .wrapper{
-  overflow: hidden;
+  //overflow: hidden;
 }
 .d-flex {
   display: flex;
@@ -445,6 +445,12 @@ body {
       display: block;
       width: 100%;
     }
+  }
+}
+
+@include respond-to($xs){
+  body {
+    font: 400 16px/1.4 $main-font;
   }
 }
 

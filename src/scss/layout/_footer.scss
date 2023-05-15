@@ -1,6 +1,6 @@
 .footer {
   background-color: #F2F4F7;
-  padding: 64px  0 60px;
+  padding: 64px 0 60px;
 
   &_top {
     position: relative;
@@ -38,9 +38,15 @@
     padding-right: 24px;
     padding-bottom: 25px;
     padding-left: 24px;
-    &:first-child{
+
+    a {
+      display: block;
+    }
+
+    &:first-child {
       padding-left: 0;
     }
+
     &:last-of-type {
       .title_xs {
         font-size: 18px;
@@ -95,7 +101,8 @@
     height: 24px;
     margin-bottom: 24px;
     transition: .35s;
-    img{
+
+    img {
       width: 100%;
     }
 
@@ -113,11 +120,13 @@
     padding-top: 24px;
     text-align: center;
   }
-  .bottom-text{
+
+  .bottom-text {
     position: relative;
     display: inline-block;
     padding: 0 24px;
-    &:after{
+
+    &:after {
       position: absolute;
       content: '';
       display: block;
@@ -127,6 +136,97 @@
       right: -4px;
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .footer {
+    &_top {
+      flex-wrap: wrap;
+    }
+
+    &__social-bar {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 27px 0;
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background-color: #DFE1E4;
+        height: 1px;
+        width: 100vw;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .social-link {
+      margin-bottom: 0;
+      margin-left: 29px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__contacts {
+      max-width: 100%;
+    }
+
+    .wrap-contact {
+      width: 100%;
+      padding-left: 0;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+
+    .part {
+      width: 50%;
+      flex-wrap: wrap;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .footer {
+    .part {
+      width: 100%;
+    }
+
+    &__contacts {
+      text-align: center;
+    }
+
+    .wrap-link {
+      display: inline-block;
+    }
+
+    .wrap-contact {
+      padding-right: 0;
+      padding-bottom: 18px;
+
+      &:last-of-type {
+        .title_xs {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .bottom-text:after {
+      display: none;
     }
   }
 }
