@@ -134,9 +134,10 @@
   .header {
     .top-bar{
       display: flex;
+      align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid #F2F4F7;
-      padding-bottom: 24px;
+      padding: 8px 0 16px;
     }
   }
   .btn_with-icon {
@@ -162,6 +163,9 @@
   }
 
   .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     left: 0;
     right: 0;
@@ -171,11 +175,10 @@
     z-index: -2;
     visibility: hidden;
     opacity: 0;
-    max-width: 520px;
+    max-width: 450px;
     width: 100%;
-    overflow: auto;
     max-height: 100%;
-    padding: 24px 24px 56px;
+    padding:18px 24px 56px;
     color: #1D2939;
     font-weight: 600;
     font-size: 14px;
@@ -205,13 +208,13 @@
 @include respond-to($md) {
   .lang-switch-mob {
     position: relative;
-    display: flex;
+    width: fit-content;
     font-weight: 400;
     font-size: 14px;
     color: #475467;
+    padding-top: 30px;
     padding-left: 48px;
-    margin-bottom: 32px;
-
+    margin: 0 auto 32px;
     &.current {
       font-weight: 600;
     }
@@ -227,8 +230,7 @@
       background-position: center;
       background-size: contain;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      bottom: 0;
       z-index: 1;
       margin: 0 auto;
     }
@@ -249,7 +251,7 @@
   .menu-lang {
     display: none;
   }
-  .mob-content {
+ .header .mob-content {
     display: block;
   }
   .btn-burger {

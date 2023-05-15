@@ -46,7 +46,7 @@ $(document).ready(function () {
         $('body').toggleClass('modal_open');
     });
 
-    $('.menu__link, .btn_close, .backdrop').click(function (e) {
+    $('.menu__link, .btn_close, .backdrop, .trigger-popup').click(function (e) {
         $('.btn-burger').removeClass('open');
         nav.removeClass('open');
         $('.sub-menu__toggle').removeClass('sub-menu__toggle_active')
@@ -196,8 +196,9 @@ $(document).ready(function () {
             separateDialCode: true,
             autoHideDialCode: true,
             autoPlaceholder: "aggressive" ,
-            // initialCountry: "auto",
+
             placeholderNumberType: "MOBILE",
+
             geoIpLookup: getIp,
             initialCountry: "ua",
 
