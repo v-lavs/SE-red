@@ -2,10 +2,13 @@
   padding-top: 0;
 
   .section-banner {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     .container {
       padding-top: 123px;
-      align-items: flex-start;
-      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
     }
   }
 

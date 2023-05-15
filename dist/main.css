@@ -2151,13 +2151,13 @@ input {
 
 /*   SWITCH-BUTTON  */
 
-.switch-toggle input[type=checkbox] {
+.switch-heading input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-.switch-toggle label {
+.switch-heading label {
   cursor: pointer;
   text-indent: -9999px;
   width: 58px;
@@ -2169,7 +2169,7 @@ input {
   border: 5px solid #FCC214;
 }
 
-.switch-toggle label:after {
+.switch-heading label:after {
   content: '';
   position: absolute;
   top: 2px;
@@ -2181,11 +2181,11 @@ input {
   transition: 0.3s;
 }
 
-.switch-toggle input:checked + label {
+.switch-heading input:checked + label {
   background-color: #FFFFFF;
 }
 
-.switch-toggle input:checked + label:after {
+.switch-heading input:checked + label:after {
   left: calc(100% - 2px);
   transform: translateX(-100%);
 }
@@ -2221,7 +2221,7 @@ input {
 }
 
 .popup {
-  background-color: #fff;
+  background-color: #FFFFFF;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -2831,8 +2831,9 @@ button.mfp-arrow:after {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 500;
+  background-color: #000000;
+  opacity: .45;
+  z-index: 310;
 }
 
 .footer {
@@ -3379,10 +3380,16 @@ button.mfp-arrow:after {
   padding-top: 0;
 }
 
+.page-project .section-banner {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 .page-project .section-banner .container {
   padding-top: 123px;
-  align-items: flex-start;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .page-project .post-list {
@@ -3873,6 +3880,9 @@ sup {
 }
 
 .page-article .section-banner {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   padding-top: 123px;
 }
 
@@ -3905,6 +3915,11 @@ sup {
 
 .article-inner .post__info {
   padding-top: 53px;
+}
+
+.section-related-post {
+  position: relative;
+  background-color: #FFFFFF;
 }
 
 .section-related-post .title_sm {
@@ -4253,6 +4268,23 @@ sup {
 
   .notification-banner__text {
     max-width: 378px;
+  }
+
+  .popup-feedback {
+    font-size: 12px;
+    height: 480px;
+  }
+
+  .popup-feedback__header {
+    padding: 10px 0;
+  }
+
+  .popup-feedback .title_xs {
+    font-size: 21px;
+  }
+
+  .popup-feedback .sub-title {
+    font-size: 16px;
   }
 
   .container {

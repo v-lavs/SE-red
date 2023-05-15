@@ -11,6 +11,8 @@
 
 
 $(document).ready(function () {
+
+
     //HEADER SCROLL
     let header = $('.header'),
         scrollPrev = 0;
@@ -133,7 +135,7 @@ $(document).ready(function () {
     });
 
 // POPUP FEEDBACK
-    $('.trigger-popup').on('click', function (e) {
+    $('.trigger-popup').click(function (e) {
         e.preventDefault();
        $('.popup-feedback').addClass('open_modal');
         $('.backdrop').fadeIn;
@@ -165,6 +167,7 @@ $(document).ready(function () {
         $('#phone').val("+" +countryCode+"  "+ $('#phone').val());
 
     });
+
 });
 
 

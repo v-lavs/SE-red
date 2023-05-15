@@ -2,6 +2,9 @@
   padding-top: 0;
 
   .section-banner {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     padding-top: 123px;
 
     &:before {
@@ -39,6 +42,9 @@
 }
 
 .section-related-post {
+  position: relative;
+  background-color: #FFFFFF;
+
   .title_sm {
     margin-bottom: 24px;
   }
@@ -79,13 +85,15 @@
   &__link {
     display: inline-block;
     transition: .35s;
+
     &:hover,
-    &:focus{
-      svg path{
+    &:focus {
+      svg path {
         fill: #FCC214;
         stroke: #FCC214;
       }
-      .fill-white{
+
+      .fill-white {
         fill: white;
       }
     }
