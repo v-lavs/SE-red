@@ -7,6 +7,7 @@
 //= include ../lib/magnific-popup/jquery.magnific-popup.min.js
 //= include ../lib/swiper/swiper-bundle.min.js
 
+
 // CUSTOM SCRIPTS
 
 
@@ -41,16 +42,19 @@ $(document).ready(function () {
     $('.btn-burger').on('click', function (e) {
         e.preventDefault();
         nav.addClass('open');
-        // $(this).addClass('open');
-        $('.backdrop').fadeIn;
+        jQuery('.backdrop').fadeIn();
         $('body').toggleClass('modal_open');
     });
 
     $('.menu__link, .btn_close, .backdrop').click(function (e) {
         $('.btn-burger').removeClass('open');
         nav.removeClass('open');
-        $('.backdrop').fadeOut;
+        $('.sub-menu__toggle').removeClass('sub-menu__toggle_active')
+        jQuery('.backdrop').fadeOut();
         $('body').removeClass('modal_open');
+    });
+    $('.sub-menu__toggle').click(function (e) {
+        $(this).toggleClass('sub-menu__toggle_active')
     });
 
     //NOTIFICATION CLOSE
@@ -137,37 +141,75 @@ $(document).ready(function () {
 // POPUP FEEDBACK
     $('.trigger-popup').click(function (e) {
         e.preventDefault();
-       $('.popup-feedback').addClass('open_modal');
-        $('.backdrop').fadeIn;
+        $('.popup-feedback').addClass('open_modal');
+        $('.overlay').fadeIn;
         $('body').toggleClass('modal_open');
     });
 
     $('.popup .btn_close').click(function (e) {
         $('.popup').removeClass('open_modal');
-        $('.backdrop').fadeOut;
+        $('.overlay').fadeOut;
         $('body').removeClass('modal_open');
     });
 
     // INTL TEL
-    var input = document.querySelector("#phone");
-    window.intlTelInput(input, {
-        initialCountry:"ua",
-        preferredCountries: ["ua","pl" ],
+    const input = document.querySelector("#phone");
+    const errorMsg = document.querySelector("#error-msg");
+    const validMsg = document.querySelector("#valid-msg");
 
-        // utilsScript: "../lib/build/js/utils.js"
-    });
-    $('.iti__flag-container').click(function() {
-
-        var countryCode = $('.iti__selected-flag').attr('title');
-
-        var countryCode = countryCode.replace(/[^0-9]/g,'')
-
-        $('#phone').val("");
-
-        $('#phone').val("+" +countryCode+"  "+ $('#phone').val());
-
+    // var input = document.querySelector("#phone-input");
+    var iti = window.intlTelInput(input, {
+        initialCountry: "auto",
+        separateDialCode: true,
+        preferredCountries: ["ua", "pl"], // You can customize the preferred countries list
+        geoIpLookup: callback => {
+            fetch("https://ipapi.co/json")
+                .then(res => res.json())
+                .then(data => callback(data.country_code))
+                .catch(() => callback("us"));
+        },
     });
 
+    // Get the selected country dial code
+    // Listen for changes to the selected country
+
+    input.addEventListener("countrychange", function () {
+        var countryData = iti.getSelectedCountryData();
+    });
+
+    function sanitizePhoneNumber(input) {
+        var sanitized = "";
+        var allowedCharacters = "0123456789+()- ";
+
+        for (var i = 0; i < input.length; i++) {
+            var currentChar = input.charAt(i);
+
+            if (allowedCharacters.indexOf(currentChar) !== -1) {
+                sanitized += currentChar;
+            }
+        }
+
+        return sanitized;
+    }
+
+    input.addEventListener("input", function (event) {
+        event.preventDefault();
+        var inputValue = event.target.value;
+        var regex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
+
+        if (regex.test(inputValue)) {
+            // Invalid international phone number
+            $('#error-msg').addClass('hide');
+        }else {
+            $('#error-msg').removeClass('hide');
+        }
+
+        this.value = sanitizePhoneNumber(inputValue);
+
+        if(inputValue.length > 17) {
+            this.value = inputValue.slice(0, 18);
+        }
+    });
 });
 
 

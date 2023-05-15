@@ -1,7 +1,50 @@
 
-.iti__flag {background-image: url("../lib/intl-tel-input/build/img/flags.png");}
-.iti{
+.iti__flag {
+  background-image: url("../lib/intl-tel-input/build/img/flags.png");
+}
+
+.iti {
   width: 100%;
+}
+
+#error-msg {
+  display: block;
+  left: 0;
+  transform: translateY(100%);
+  bottom: -2px;
+  width: auto;
+  z-index: 2;
+
+  &.hide {
+    display: none;
+  }
+
+}
+
+#error-msg {
+  display: inline-block;
+  position: absolute;
+  padding-left: 24px;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 12px;
+  color: #CC3D3D;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../assets/img/info-red.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+  }
 }
 
 .form {
@@ -20,6 +63,11 @@ input {
   border: 1px solid #DFE1E4;
   border-radius: 4px;
   padding: 16px 17px;
+
+  &.error {
+    border-color: #CC3D3D;
+    color: #CC3D3D;
+  }
 }
 
 .label-input {

@@ -33,7 +33,10 @@
                     <img src="assets/img/logo.svg" alt="SmartEstate" width="64" height="46">
                 </a></h1>
                 <div class="header__nav">
-                    <button type="button" aria-label="Закрити меню" class="btn_close"></button>
+                    <div class="top-bar">
+                        <span class="text">Меню</span>
+                        <button type="button" aria-label="Закрити меню" class="btn_close"></button>
+                    </div>
                     <ul class="menu">
                         <li class="menu__item  dropdown">
                             <a href="#" class="menu__link">Проєкти</a>
@@ -60,7 +63,7 @@
                                             <span class="text_light">Вул. Зелена 111</span>
                                         </span>
                                     </a>
-                              </li>
+                                </li>
                             </ul>
                         </li>
                         <li class="menu__item"><a href="#about" class="menu__link">Про нас</a></li>
@@ -68,10 +71,22 @@
                         <li class="menu__item"><a href="#investments" class="menu__link">Інвестиції</a></li>
                         <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
                     </ul>
+                    <div class="mob-content">
+                        <div class="lang-switch-mob">
+                            <a href="#" class="lang-switch-mob__link current">Українська</a>
+                            <a href="#" class="lang-switch-mob__link">English</a>
+                            <a href="#" class="lang-switch-mob__link">Polska</a>
+                        </div>
+                        <a href="#popupFeedback" class="btn btn_with-icon trigger-popup">
+                            <img src="assets/img/file.svg" alt="" class="btn__icon">
+                            Зворотній зв’язок</a>
+                    </div>
                 </div>
+                <button type="button" aria-label="Кнопка меню" class="btn-burger">
+                    <img src="assets/img/menu.svg" alt="кнопка бургер">Меню
+                </button>
+
                 <a href="#popupFeedback" class="header__contact trigger-popup">Зворотній зв’язок</a>
-
-
                 <ul class="menu menu-lang">
                     <li class="menu__item  dropdown">
                         <a href="#" class="menu__link">Українська</a>
@@ -89,22 +104,18 @@
                             </li>
                             <li class="menu__item">
                                 <a href="page-project.html" class="menu__link">
-                                    Polski
+                                    Polska
                                 </a>
                             </li>
                         </ul>
                     </li>
 
                 </ul>
-
-                <button type="button" aria-label="Кнопка меню" class="btn-burger">
-                    <img src="assets/img/menu.svg" alt="кнопка бургер">Меню
-                </button>
             </div>
         </div>
         <div class="backdrop"></div>
     </header>
-
+    <div class="overlay"></div>
     <main class="main">
         <section class="section-banner dark">
             <div class="container wrap-notification">
@@ -442,24 +453,24 @@
         </div>
     </footer>
 
-    <div class="popup popup-banner open_modal">
-        <div class="popup-banner__inner">
-            <div class="popup-banner__header">
-                <button type="button" aria-label="Закрити попап" class="btn_close"></button>
-            </div>
-            <div class="popup-banner__body">
-                <img src="assets/img/modal_desktop_06%201.jpg" alt="" class="">
-            </div>
-            <div class="popup-banner__footer">
-                <a href="#popupFeedback" class="btn btn_warm trigger-popup">
-                <span class="span icon">
-                    <img src="assets/img/local-phone.svg" alt="">
-                </span>
-                    Зворотній зв’язок</a>
-                <p>*Наш менеджер ознайомить Вас зі всією важливою інформацією</p>
-            </div>
-        </div>
-    </div>
+<!--    <div class="popup popup-banner open_modal">-->
+<!--        <div class="popup-banner__inner">-->
+<!--            <div class="popup-banner__header">-->
+<!--                <button type="button" aria-label="Закрити попап" class="btn_close"></button>-->
+<!--            </div>-->
+<!--            <div class="popup-banner__body">-->
+<!--                <img src="assets/img/modal_desktop_06%201.jpg" alt="" class="">-->
+<!--            </div>-->
+<!--            <div class="popup-banner__footer">-->
+<!--                <a href="#popupFeedback" class="btn btn_warm trigger-popup">-->
+<!--                <span class="span icon">-->
+<!--                    <img src="assets/img/local-phone.svg" alt="">-->
+<!--                </span>-->
+<!--                    Зворотній зв’язок</a>-->
+<!--                <p>*Наш менеджер ознайомить Вас зі всією важливою інформацією</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="popup popup-feedback" id="popupFeedback">
         <div class="popup-feedback__header">
@@ -472,9 +483,8 @@
                     <div class="sub-title">Надішліть Ваш номер телефону і ми передзвонимо протягом 1 години.</div>
                     <div class="form__group">
                         <label for="phone" class="label-input">Номер телефону</label>
-                        <input id="phone" type="tel" placeholder="+ 38 (063) 42 91 572">
-                        <!--                        <span id="valid-msg" class="hide">✓ Valid</span>-->
-                        <!--                        <span id="error-msg" class="hide"></span>-->
+                        <input id="phone" type="tel">
+                        <span id="error-msg" class="hide">Номер телефону введено некоректно</span>
                     </div>
                     <div class="form__group">
                         <label for="name" class="label-input">Ваше ім’я</label>
@@ -486,6 +496,16 @@
                     даних</strong></p>
             </div>
             <div class="popup-feedback__thumb" style="background-image: url(assets/img/img-card.jpg);"></div>
+            <div class="thank-you-page">
+                <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+                <div class="popup__body">
+                    <div class="content">
+                        <div class="icon"></div>
+                        <div class="title title_xs">Ваш запит прийнято</div>
+                        <p>Очікуйте дзвінок від нашого менеджера протягом 1 години.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

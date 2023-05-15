@@ -20,9 +20,6 @@
       transform: translateY(0px);
     }
 
-    //&.desk-hide {
-    //  display: none;
-    //}
   }
 
   &__link {
@@ -152,11 +149,11 @@
   }
 
 
-  @include respond-to($md) {
+  @include respond-to($lg) {
     text-align: left;
     flex-direction: column;
     align-items: flex-start;
-    color: #FFFFFF;
+    //color: #FFFFFF;
     padding: 0 5px 40px;
     &:hover > .sub-menu {
       display: none;
@@ -201,7 +198,7 @@
       }
     }
     .menu__item {
-      color: #FFFFFF;
+      color: #475467;
 
       &.desk-hide {
         display: block;
