@@ -8,7 +8,7 @@
   opacity: 0;
   transition: opacity .5s linear;
   visibility: hidden;
-
+  border-radius: 8px;
   &.open_modal {
     opacity: 1;
     visibility: visible;

@@ -2172,7 +2172,7 @@ body.modal_open {
 
 input {
   width: 100%;
-  border: 1px solid #DFE1E4;
+  border: 1px solid #FFFFFF;
   border-radius: 4px;
   padding: 16px 17px;
 }
@@ -2278,6 +2278,7 @@ input.error {
   opacity: 0;
   transition: opacity .5s linear;
   visibility: hidden;
+  border-radius: 8px;
 }
 
 .popup.open_modal {
