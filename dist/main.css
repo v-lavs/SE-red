@@ -2600,7 +2600,7 @@ input.error {
 
 .infinity-line {
   background: url(../assets/img/marquee.svg) repeat-x;
-  width: 100%;
+  width: auto;
   height: 248px;
   animation: animate 5s linear infinite;
 }
@@ -4626,6 +4626,15 @@ sup {
 
   .wrap-notification {
     top: 95px;
+  }
+
+  .infinity-block {
+    padding: 64px 0;
+  }
+
+  .infinity-line {
+    height: 90px;
+    background-size: auto 90px;
   }
 
   .container {
