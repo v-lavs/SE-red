@@ -62,6 +62,15 @@ $(document).ready(function () {
         $('.wrap-notification').fadeOut();
     });
 
+//   MENU-PAGE
+    $('.btn-toggle-open').on('click', function (e) {
+        $('.menu_page').fadeToggle();
+    });
+    $('.menu_page .menu__item').on('click', function (e) {
+        $('.menu_page').fadeOut();
+    });
+
+
 //SWITCH NEWS-ACTION
     $('#switch').click(function () {
 

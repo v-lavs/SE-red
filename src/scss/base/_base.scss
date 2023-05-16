@@ -98,6 +98,7 @@ body {
       top: 50%;
       transform: translateY(-50%);
       color: #F2F4F7;
+      width: max-content;
       opacity: 0.5;
       z-index: -1;
     }
@@ -451,7 +452,7 @@ body {
 }
 
 @include respond-to($lg) {
-  .section {
+  .home .section {
     &__heading {
       text-align: center;
 
@@ -469,10 +470,18 @@ body {
     font: 400 16px/1.4 $main-font;
     font-feature-settings: 'pnum' on, 'lnum' on;
   }
+  .page .section__heading {
+    margin-bottom: 32px;
+  }
+  .link-back{
+    display: none;
+  }
   .section {
     &__heading {
-        padding: 0;
-        margin-bottom: 32px;
+      padding: 0;
+      margin-bottom: 32px;
+      text-align: center;
+
       .title_lg {
         display: none;
       }

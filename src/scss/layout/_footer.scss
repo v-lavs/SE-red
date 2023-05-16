@@ -225,6 +225,11 @@
       }
     }
 
+    .phone, .mail {
+      width: max-content;
+      margin: 0 auto;
+    }
+
     .bottom-text:after {
       display: none;
     }

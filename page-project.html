@@ -31,8 +31,10 @@
                     <img src="assets/img/logo.svg" alt="SmartEstate" width="64" height="46">
                 </a></h1>
                 <div class="header__nav">
-                    <button type="button" aria-label="Закрити меню" class="btn_close"></button>
-
+                    <div class="top-bar">
+                        <span class="text">Меню</span>
+                        <button type="button" aria-label="Закрити меню" class="btn_close"></button>
+                    </div>
                     <ul class="menu">
                         <li class="menu__item  dropdown">
                             <a href="#" class="menu__link">Проєкти</a>
@@ -67,10 +69,22 @@
                         <li class="menu__item"><a href="index.html#investments" class="menu__link">Інвестиції</a></li>
                         <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
                     </ul>
+                    <div class="mob-content">
+                        <div class="lang-switch-mob">
+                            <a href="#" class="lang-switch-mob__link current">Українська</a>
+                            <a href="#" class="lang-switch-mob__link">English</a>
+                            <a href="#" class="lang-switch-mob__link">Polska</a>
+                        </div>
+                        <a href="#popupFeedback" class="btn btn_with-icon trigger-popup">
+                            <img src="assets/img/file.svg" alt="" class="btn__icon">
+                            Зворотній зв’язок</a>
+                    </div>
                 </div>
+                <button type="button" aria-label="Кнопка меню" class="btn-burger">
+                    <img src="assets/img/menu.svg" alt="кнопка бургер">Меню
+                </button>
 
                 <a href="#popupFeedback" class="header__contact trigger-popup">Зворотній зв’язок</a>
-
                 <ul class="menu menu-lang">
                     <li class="menu__item  dropdown">
                         <a href="#" class="menu__link">Українська</a>
@@ -95,10 +109,6 @@
                     </li>
 
                 </ul>
-
-                <button type="button" aria-label="Кнопка меню" class="btn-burger">
-                    <img src="assets/img/menu.svg" alt="кнопка бургер">Меню
-                </button>
             </div>
         </div>
         <div class="backdrop"></div>
@@ -115,7 +125,8 @@
                 </div>
                 <div class="section__content">
                     <div class="label label_outline">Будівництво завершене</div>
-                    <div class="location"><span class="zone"> Франківський район</span> <span class="street"> / вул. Стрийська, 266</span></div>
+                    <div class="location"><span class="zone"> Франківський район</span> <span class="street"> / вул. Стрийська, 266</span>
+                    </div>
                     <h2 class="title title_md">266 SMART</h2>
                     <div class="sub-title title title_sm">від 46 296 грн/м2</div>
                 </div>
@@ -128,13 +139,20 @@
                         <button type="button" class="btn btn_warm">Вибрати приміщення</button>
                         <span class="notification">Залишилося 1 вільне приміщення</span>
                     </div>
-                    <ul class="menu menu_page">
-                        <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
-                        <li class="menu__item"><a href="#characteristic" class="menu__link">Опис</a></li>
-                        <li class="menu__item"><a href="#construction" class="menu__link">Хід будівництва</a></li>
-                        <li class="menu__item"><a href="#documents" class="menu__link">Документи</a></li>
-                        <li class="menu__item"><a href="#visualization" class="menu__link">3D Візуалізація</a></li>
-                    </ul>
+
+
+                    <div class="block-nav-page">
+                        <button type="button" aria-label="Кнопка навігації по сторінці" class="btn-toggle-open">
+                            <img src="assets/img/menu.svg" alt="кнопка списку">
+                        </button>
+                        <ul class="menu menu_page">
+                            <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+                            <li class="menu__item"><a href="#characteristic" class="menu__link">Опис</a></li>
+                            <li class="menu__item"><a href="#construction" class="menu__link">Хід будівництва</a></li>
+                            <li class="menu__item"><a href="#documents" class="menu__link">Документи</a></li>
+                            <li class="menu__item"><a href="#visualization" class="menu__link">3D Візуалізація</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
@@ -150,25 +168,29 @@
                         <div class="swiper-container gallery-top">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image" data-effect="mfp-zoom-in" class="process-slide__thumb">
+                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image" data-effect="mfp-zoom-in"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/img-gallery-lg.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/article-img.jpg" data-type="image" data-effect="mfp-zoom-in" class="process-slide__thumb">
+                                    <a href="assets/img/article-img.jpg" data-type="image" data-effect="mfp-zoom-in"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/article-img.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image" data-effect="mfp-zoom-in" class="process-slide__thumb">
+                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image"
+                                       data-effect="mfp-zoom-in" class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/zelena_2_section-scaled.jpeg" alt="">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image" class="process-slide__thumb">
+                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/img-gallery-lg.jpg" alt="">
                                     </a>
@@ -180,13 +202,15 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image" class="process-slide__thumb">
+                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/zelena_2_section-scaled.jpeg" alt="">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image" class="process-slide__thumb">
+                                    <a href="assets/img/img-gallery-lg.jpg" data-type="image"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/img-gallery-lg.jpg" alt="">
                                     </a>
@@ -198,7 +222,8 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image" class="process-slide__thumb">
+                                    <a href="assets/img/zelena_2_section-scaled.jpeg" data-type="image"
+                                       class="process-slide__thumb">
                                         <span class="icon-fullscreen"></span>
                                         <img src="assets/img/zelena_2_section-scaled.jpeg" alt="">
                                     </a>
@@ -261,7 +286,7 @@
                         <h3 class="title title_xs">
                             Комфортний <br>
                             Smart простір</h3>
-                        <div class="part_right">
+                        <div class="part_right section__content">
                             <div class="section__text">
                                 <p><strong>Торгово офісний центр 266 Smart</strong> — це багатофункціональний робочий
                                     простір, у якому грамотно спланована кожна одиниця корисної площі й стиль
@@ -680,8 +705,7 @@
                 <div class="form__group">
                     <label for="phone" class="label-input">Номер телефону</label>
                     <input id="phone" type="tel" placeholder="+ 38 (063) 42 91 572">
-                    <!--                        <span id="valid-msg" class="hide">✓ Valid</span>-->
-                    <!--                        <span id="error-msg" class="hide"></span>-->
+                    <span id="error-msg" class="hide">Номер телефону введено некоректно</span>
                 </div>
                 <div class="form__group">
                     <label for="name" class="label-input">Ваше ім’я</label>
@@ -689,14 +713,24 @@
                 </div>
                 <button class="btn btn_warm btn_submit">Замовити дзвінок</button>
             </form>
-            <p>Натискаючи на кнопку “Замовити дзвінок” ви підтверджуєте згоду на <strong>обробку персональних
-                даних</strong></p>
+            <p>Натискаючи на кнопку “Замовити дзвінок” ви підтверджуєте згоду на <a href="#"><strong>обробку персональних
+                даних</strong></a></p>
         </div>
         <div class="popup-feedback__thumb" style="background-image: url(assets/img/img-card.jpg);"></div>
+        <div class="thank-you-page">
+            <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+            <div class="popup__body">
+                <div class="content">
+                    <div class="icon"></div>
+                    <div class="title title_xs">Ваш запит прийнято</div>
+                    <p>Очікуйте дзвінок від нашого менеджера протягом 1 години.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<script src="lib/intl-tel-input/build/js/intlTelInput.min.js"></script>
+
 <script src="dist/main.js"></script>
 </body>
 </html>

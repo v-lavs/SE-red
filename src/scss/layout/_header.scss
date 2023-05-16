@@ -87,6 +87,7 @@
   }
 }
 
+
 .btn-burger {
   display: none;
   align-items: center;
@@ -143,21 +144,23 @@
       border-bottom: 1px solid #F2F4F7;
       padding: 8px 0 16px;
     }
-  }
-  .btn_with-icon {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FCC214;
-    border-radius: 0;
-    width: 100%;
 
-    &__icon {
-      margin-left: 0;
-      margin-right: 8px;
+    .btn_with-icon {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FCC214;
+      border-radius: 0;
+      width: 100%;
+
+      &__icon {
+        margin-left: 0;
+        margin-right: 8px;
+      }
     }
   }
+
   .header__inner {
     position: relative;
 
