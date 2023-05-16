@@ -54,3 +54,36 @@
     }
   }
 }
+
+
+@include respond-to($sm) {
+  .page-news {
+    .post {
+      min-height: 260px;
+
+      &-list__item {
+        flex-grow: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .page-news {
+    .post-list {
+      max-width: 420px;
+      margin: 0 auto;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
+@include respond-to($xs){
+.filter-toolbar .nice-select .list{
+  min-width: 290px;
+  width: auto;
+  left: -33px;
+}
+}

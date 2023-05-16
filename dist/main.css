@@ -3678,6 +3678,10 @@ select {
   object-fit: cover;
 }
 
+.section-construction {
+  overflow: hidden;
+}
+
 .construction-period-filter {
   display: flex;
   width: 100%;
@@ -4876,6 +4880,14 @@ sup {
   .about-us .title_xs {
     margin-bottom: 24px;
   }
+
+  .page-news .post {
+    min-height: 260px;
+  }
+
+  .page-news .post-list__item {
+    flex-grow: 0;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -4964,6 +4976,15 @@ sup {
 
   .list-documents {
     margin-bottom: 26px;
+  }
+
+  .page-news .post-list {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .page-news .post-list__item {
+    width: 100%;
   }
 }
 
@@ -5129,6 +5150,12 @@ sup {
 
   .post-3d .post__content {
     font-size: 16px;
+  }
+
+  .filter-toolbar .nice-select .list {
+    min-width: 290px;
+    width: auto;
+    left: -33px;
   }
 }
 
