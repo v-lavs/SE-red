@@ -28,3 +28,28 @@
     opacity: 0;
   }
 }
+
+@include respond-to($lg){
+  .post-list__item {
+    width: 50%;
+    flex-grow: 1;
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include respond-to($sm){
+  .section-news {
+    .post-list {
+      margin: 0 auto;
+      max-width: 540px;
+      width: 100%;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
