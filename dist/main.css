@@ -1406,10 +1406,6 @@ body.modal_open {
   height: 100%;
 }
 
-.wrapper {
-  overflow: hidden;
-}
-
 .d-flex {
   display: flex;
 }
@@ -3094,6 +3090,17 @@ button.mfp-arrow:after {
   font-size: 18px;
   color: #B8C0CC;
   margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-banner .location span {
+  display: block;
+  margin-right: 7px;
+}
+
+.section-banner .location span:last-child {
+  margin-right: 0;
 }
 
 .section-banner .label_outline {

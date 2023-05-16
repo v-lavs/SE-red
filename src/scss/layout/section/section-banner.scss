@@ -23,6 +23,18 @@
     font-size: 18px;
     color: #B8C0CC;
     margin-bottom: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      display: block;
+      margin-right: 7px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .label_outline {
@@ -161,11 +173,12 @@
     .title_md {
       font-size: 32px;
     }
+
     .title_sm {
       font-size: 24px;
     }
   }
-  .section-banner__bg .container{
+  .section-banner__bg .container {
     min-height: 600px;
   }
 }
