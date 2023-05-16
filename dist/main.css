@@ -2157,7 +2157,7 @@ body.modal_open {
 
 input {
   width: 100%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #DFE1E4;
   border-radius: 4px;
   padding: 16px 17px;
 }
@@ -2173,7 +2173,7 @@ input.error {
   font-weight: 600;
   font-size: 12px;
   padding: 4px 8px;
-  background-color: #FCFCFD;
+  background-color: #FFFFFF;
   transform: translate(7px, -50%);
   z-index: 1;
 }

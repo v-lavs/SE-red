@@ -151,13 +151,13 @@ $(document).ready(function () {
     $('.trigger-popup').click(function (e) {
         e.preventDefault();
         $('.popup-feedback').addClass('open_modal');
-        $('.overlay').fadeIn();
+        $('.backdrop').fadeIn();
         $('body').toggleClass('modal_open');
     });
 
     $('.popup .btn_close').click(function (e) {
         $('.popup').removeClass('open_modal');
-        $('.overlay').fadeOut();
+        $('.backdrop').fadeOut();
         $('body').removeClass('modal_open');
     });
 
