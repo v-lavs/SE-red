@@ -192,6 +192,9 @@
 
 @include respond-to($sm) {
   .section-investments {
+    .container:before{
+      display: none;
+    }
     .part {
       width: 100%;
 
