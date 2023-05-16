@@ -2108,18 +2108,6 @@ body.modal_open {
   background-size: contain;
 }
 
-.iti__flag {
-  background-image: url("../lib/intl-tel-input/build/img/flags.png");
-}
-
-.iti {
-  width: 100%;
-}
-
-.iti--separate-dial-code .iti__selected-flag {
-  background-color: transparent;
-}
-
 #error-msg {
   display: block;
   left: 0;
@@ -3316,6 +3304,11 @@ button.mfp-arrow:after {
   margin-left: auto;
 }
 
+.section-news .heading__inner {
+  display: flex;
+  align-items: center;
+}
+
 .switch-heading {
   align-items: center;
   margin-bottom: 48px;
@@ -3325,10 +3318,14 @@ button.mfp-arrow:after {
   margin: 0;
 }
 
+.switch-heading .section__heading:first-child {
+  z-index: 0;
+}
+
 .switch-heading .toggle-block {
   position: relative;
   margin: 0 28px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .section__heading.switch-toggle .title_sm {
@@ -4405,6 +4402,24 @@ sup {
     margin-bottom: 8px;
   }
 
+  .section-news .heading__inner {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-news .switch-heading {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .section-news .section__heading {
+    position: static;
+  }
+
+  .section-news .link {
+    margin: 0 auto;
+  }
+
   .post-list__item {
     width: 50%;
     flex-grow: 1;
@@ -4730,6 +4745,14 @@ sup {
     width: 100%;
   }
 
+  .section-investments {
+    padding-top: 0;
+  }
+
+  .section-investments .container:before {
+    display: none;
+  }
+
   .section-investments .part {
     width: 100%;
   }
@@ -4830,7 +4853,7 @@ sup {
   }
 
   .title_sm {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .title_xs {
@@ -4881,6 +4904,10 @@ sup {
     font-size: 32px;
   }
 
+  .section-banner .title_sm {
+    font-size: 24px;
+  }
+
   .section-banner__bg .container {
     min-height: 600px;
   }
@@ -4898,6 +4925,18 @@ sup {
 
   .experience .title {
     margin-bottom: 24px;
+  }
+
+  .section-news {
+    padding-top: 74px;
+  }
+
+  .section-news .heading__inner {
+    padding-bottom: 64px;
+  }
+
+  .section-news .switch-heading {
+    margin-bottom: 43px;
   }
 
   .goal-fond {

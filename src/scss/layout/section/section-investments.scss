@@ -192,6 +192,7 @@
 
 @include respond-to($sm) {
   .section-investments {
+    padding-top: 0;
     .container:before{
       display: none;
     }
