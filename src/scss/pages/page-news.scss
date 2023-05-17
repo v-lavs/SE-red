@@ -78,14 +78,15 @@
         width: 100%;
       }
     }
+    }
+}
 
+@include respond-to($xs) {
+  .page-news{
     .switch-heading .toggle-block {
       margin: -30px 5px 0;
     }
   }
-}
-
-@include respond-to($xs) {
   .sort-buttons {
     display: flex;
     justify-content: flex-end;

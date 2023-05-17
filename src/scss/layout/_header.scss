@@ -135,6 +135,7 @@
 
 @include respond-to($lg) {
   .header {
+    &.header_white,
     &.bg_active{
       .menu-lang .dropdown > .menu__link{
         color: #1D2939;
