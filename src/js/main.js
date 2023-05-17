@@ -73,10 +73,7 @@ $(document).ready(function () {
 
 //SWITCH NEWS-ACTION
     $('#switch').click(function () {
-
-        if ($(this).is(':checked')) {
             $('.section-news .section__heading').toggleClass('switch-toggle');
-        }
     });
 
 //CUSTOM SELECT
