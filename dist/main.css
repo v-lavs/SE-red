@@ -4388,10 +4388,20 @@ sup {
 
   .menu.menu-lang {
     padding: 0;
+    overflow: visible;
   }
 
   .menu-lang .menu__item.dropdown {
     color: #FFFFFF;
+  }
+
+  .menu-lang .sub-menu:before {
+    top: 3px;
+  }
+
+  .menu-lang .sub-menu__toggle_active + .sub-menu {
+    position: absolute;
+    top: 27px;
   }
 
   .footer_top {
