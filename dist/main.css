@@ -4013,12 +4013,30 @@ sup {
   position: -webkit-sticky;
   top: 0;
   padding-top: 123px;
+  min-height: 860px;
 }
 
 .page-article .section-banner:before {
   background-image: linear-gradient(180deg, #101828 0%, rgba(16, 24, 40, 0) 100%);
   background-color: transparent;
   height: 30%;
+}
+
+.page-article .section-banner .container {
+  min-height: 0;
+  height: auto;
+}
+
+.page-article .article__thumb {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .article-inner {
@@ -4126,7 +4144,6 @@ sup {
 
   .container {
     max-width: 1280px;
-    background: rosybrown;
   }
 
   .article-inner {
@@ -4144,6 +4161,53 @@ sup {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+  }
+
+  .dynamic-content figcaption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #B8C0CC;
+  }
+
+  .dynamic-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .dynamic-content img.alignright,
+  .dynamic-content img.alignleft {
+    max-width: 100%;
+    height: auto;
+    float: none;
+    margin: 24px 0;
+  }
+
+  .dynamic-content .block-img-sm-right,
+  .dynamic-content .block-img-sm-left {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0;
+  }
+
+  .dynamic-content .block-img-sm-right .part,
+  .dynamic-content .block-img-sm-left .part {
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+  }
+
+  .dynamic-content .block-img-sm-left .part_right,
+  .dynamic-content .block-img-sm-left .part_left,
+  .dynamic-content .block-img-sm-right .part_right,
+  .dynamic-content .block-img-sm-right .part_left {
+    padding-top: 0;
+    min-height: 280px;
+    width: 100%;
+    margin: 0 0 24px;
   }
 
   .menu {
@@ -4239,7 +4303,6 @@ sup {
 
   .container {
     max-width: 940px;
-    background: lightgreen;
   }
 
   .header .container {
@@ -4545,7 +4608,6 @@ sup {
 
   .container {
     max-width: 830px;
-    background: coral;
   }
 
   .lang-switch-mob {
@@ -4738,7 +4800,6 @@ sup {
 
   .container {
     width: 100%;
-    background-color: #88bfff;
   }
 
   .header__contact,
@@ -5113,6 +5174,110 @@ sup {
     display: none;
   }
 
+  .article-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .dynamic-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content h1,
+  .dynamic-content h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .dynamic-content h3 {
+    margin-top: 18px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content h4,
+  .dynamic-content h5,
+  .dynamic-content h6 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content ol,
+  .dynamic-content ul {
+    font-size: 16px;
+    color: #475467;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  .dynamic-content ul > li:before {
+    top: 9px;
+  }
+
+  .dynamic-content ol {
+    padding-left: 24px;
+  }
+
+  .dynamic-content ol li {
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content ol li:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content ol li:before {
+    position: absolute;
+    left: 8px;
+    counter-increment: list;
+    content: counters(list, ". ") ".";
+  }
+
+  .dynamic-content figcaption {
+    font-size: 12px;
+  }
+
+  .dynamic-content blockquote {
+    padding: 8px 16px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content img.alignright,
+  .dynamic-content img.alignleft {
+    margin: 16px 0;
+  }
+
+  .dynamic-content .block-img-sm-right,
+  .dynamic-content .block-img-sm-left {
+    margin: 0;
+  }
+
+  .dynamic-content .block-img-sm-left .part_right,
+  .dynamic-content .block-img-sm-left .part_left,
+  .dynamic-content .block-img-sm-right .part_right,
+  .dynamic-content .block-img-sm-right .part_left {
+    margin: 0 0 16px;
+  }
+
+  .dynamic-content .list-files {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .dynamic-content .list-files .description {
+    margin-right: 20px;
+  }
+
+  .dynamic-content .list-files .btn_download {
+    width: 24px;
+  }
+
   .title_md {
     font-size: 32px;
   }
@@ -5170,7 +5335,6 @@ sup {
 
   .container {
     padding: 0 16px;
-    background: khaki;
   }
 
   .section-banner .title_md {
@@ -5284,6 +5448,14 @@ sup {
     min-width: 290px;
     width: auto;
     left: -33px;
+  }
+
+  .page-article .section-banner {
+    min-height: 600px;
+  }
+
+  .widget-share__item:first-child {
+    margin-left: 0;
   }
 }
 

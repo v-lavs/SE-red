@@ -8,25 +8,20 @@
 
   @include respond-to($xl) {
     max-width: 1280px;
-    background: rosybrown;
   }
 
   @include respond-to($lg) {
     max-width: 940px;
-    background: lightgreen;
   }
 
   @include respond-to($md) {
     max-width: 830px;
-    background: coral;
   }
   @include respond-to($sm) {
     width: 100%;
-    background-color: #88bfff;
   }
 
   @include respond-to($xs) {
     padding: 0 16px;
-    background: khaki;
   }
 }

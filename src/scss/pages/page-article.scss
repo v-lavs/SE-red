@@ -6,12 +6,29 @@
     position: -webkit-sticky;
     top: 0;
     padding-top: 123px;
+    min-height: 860px;
 
     &:before {
       background-image: linear-gradient(180deg, #101828 0%, rgba(16, 24, 40, 0) 100%);
       background-color: transparent;
       height: 30%;
     }
+
+    .container {
+      min-height: 0;
+      height: auto;
+    }
+  }
+  .article__thumb{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
   }
 }
 
@@ -179,5 +196,12 @@
 }
 
 @include respond-to($xs) {
-
+  .page-article .section-banner {
+    min-height: 600px;
+  }
+  .widget-share__item {
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
