@@ -86,10 +86,27 @@
 }
 
 @include respond-to($xs) {
-  .filter-toolbar .nice-select .list {
-    min-width: 290px;
-    width: auto;
-    left: -33px;
+  .sort-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .toolbar-btn {
+    margin-left: 16px;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+  }
+  .filter-toolbar {
+    .wrap-select {
+      width: 180px;
+    }
+    .nice-select {
+      .list {
+        min-width: 290px;
+        width: auto;
+        left: -33px;
+      }
+    }
   }
 }
 

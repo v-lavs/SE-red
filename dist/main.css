@@ -1454,6 +1454,10 @@ body.modal_open {
   justify-content: space-between;
 }
 
+.page__pagination .btn_warm {
+  min-width: 236px;
+}
+
 .page__count {
   font-weight: 600;
 }
@@ -4895,6 +4899,15 @@ sup {
 }
 
 @media screen and (max-width: 640px) {
+  .page__pagination {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .page__pagination .btn_warm {
+    margin-bottom: 16px;
+  }
+
   .switch-heading .toggle-block {
     margin: 0 5px;
   }
@@ -5181,6 +5194,22 @@ sup {
     font-size: 16px;
   }
 
+  .sort-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .toolbar-btn {
+    margin-left: 16px;
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+  }
+
+  .filter-toolbar .wrap-select {
+    width: 180px;
+  }
+
   .filter-toolbar .nice-select .list {
     min-width: 290px;
     width: auto;
@@ -5192,7 +5221,11 @@ sup {
   .section-banner .btn_warm {
     min-width: 0;
     width: auto;
-    padding: 15px 10px;
+    margin-right: 16px;
+  }
+
+  .section-banner .btn_stroke {
+    width: 65px;
   }
 
   .block-nav-page .btn-toggle-open {

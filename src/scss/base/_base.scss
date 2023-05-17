@@ -59,6 +59,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .btn_warm{
+      min-width: 236px;
+    }
   }
 
   &__count {
@@ -464,7 +467,15 @@ body {
     }
   }
 }
-
+@media screen and (max-width: 640px) {
+  .page__pagination{
+    flex-direction: column;
+    align-content: center;
+    .btn_warm{
+      margin-bottom: 16px;
+    }
+  }
+}
 @include respond-to($xs) {
   body {
     font: 400 16px/1.4 $main-font;
