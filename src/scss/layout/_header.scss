@@ -214,7 +214,9 @@
   .menu.menu-lang {
     padding: 0;
   }
-
+  .menu-lang .menu__item.dropdown {
+    color: #FFFFFF;
+  }
 }
 
 @include respond-to($md) {

@@ -223,6 +223,7 @@
         display: none;
       }
     }
+
   }
   @include respond-to($xs) {
     &__item {

@@ -4390,6 +4390,10 @@ sup {
     padding: 0;
   }
 
+  .menu-lang .menu__item.dropdown {
+    color: #FFFFFF;
+  }
+
   .footer_top {
     flex-wrap: wrap;
   }
