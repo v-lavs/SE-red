@@ -5039,6 +5039,110 @@ sup {
     margin-bottom: 16px;
   }
 
+  .article {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .dynamic-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content h1,
+  .dynamic-content h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .dynamic-content h3 {
+    margin-top: 18px;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content h4,
+  .dynamic-content h5,
+  .dynamic-content h6 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content ol,
+  .dynamic-content ul {
+    font-size: 16px;
+    color: #475467;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  .dynamic-content ul > li:before {
+    top: 9px;
+  }
+
+  .dynamic-content ol {
+    padding-left: 24px;
+  }
+
+  .dynamic-content ol li {
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content ol li:last-child {
+    margin-bottom: 0;
+  }
+
+  .dynamic-content ol li:before {
+    position: absolute;
+    left: 8px;
+    counter-increment: list;
+    content: counters(list, ". ") ".";
+  }
+
+  .dynamic-content figcaption {
+    font-size: 12px;
+  }
+
+  .dynamic-content blockquote {
+    padding: 8px 16px;
+    margin-bottom: 8px;
+  }
+
+  .dynamic-content img.alignright,
+  .dynamic-content img.alignleft {
+    margin: 16px 0;
+  }
+
+  .dynamic-content .block-img-sm-right,
+  .dynamic-content .block-img-sm-left {
+    margin: 0;
+  }
+
+  .dynamic-content .block-img-sm-left .part_right,
+  .dynamic-content .block-img-sm-left .part_left,
+  .dynamic-content .block-img-sm-right .part_right,
+  .dynamic-content .block-img-sm-right .part_left {
+    margin: 0 0 16px;
+  }
+
+  .dynamic-content .list-files {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .dynamic-content .list-files .description {
+    margin-right: 20px;
+  }
+
+  .dynamic-content .list-files .btn_download {
+    width: 24px;
+  }
+
   .switch-heading .toggle-block {
     margin: 0 5px;
   }
@@ -5174,108 +5278,8 @@ sup {
     display: none;
   }
 
-  .article-inner {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .dynamic-content p {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .dynamic-content p:last-child {
-    margin-bottom: 0;
-  }
-
-  .dynamic-content h1,
-  .dynamic-content h2 {
-    font-size: 32px;
-    margin-bottom: 32px;
-    margin-top: 32px;
-  }
-
-  .dynamic-content h3 {
-    margin-top: 18px;
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .dynamic-content h4,
-  .dynamic-content h5,
-  .dynamic-content h6 {
-    margin-top: 18px;
-    margin-bottom: 8px;
-  }
-
-  .dynamic-content ol,
-  .dynamic-content ul {
-    font-size: 16px;
-    color: #475467;
-    margin-bottom: 8px;
-    overflow: hidden;
-  }
-
-  .dynamic-content ul > li:before {
-    top: 9px;
-  }
-
-  .dynamic-content ol {
-    padding-left: 24px;
-  }
-
-  .dynamic-content ol li {
-    margin-bottom: 8px;
-  }
-
-  .dynamic-content ol li:last-child {
-    margin-bottom: 0;
-  }
-
-  .dynamic-content ol li:before {
-    position: absolute;
-    left: 8px;
-    counter-increment: list;
-    content: counters(list, ". ") ".";
-  }
-
-  .dynamic-content figcaption {
-    font-size: 12px;
-  }
-
-  .dynamic-content blockquote {
-    padding: 8px 16px;
-    margin-bottom: 8px;
-  }
-
-  .dynamic-content img.alignright,
-  .dynamic-content img.alignleft {
-    margin: 16px 0;
-  }
-
-  .dynamic-content .block-img-sm-right,
-  .dynamic-content .block-img-sm-left {
-    margin: 0;
-  }
-
-  .dynamic-content .block-img-sm-left .part_right,
-  .dynamic-content .block-img-sm-left .part_left,
-  .dynamic-content .block-img-sm-right .part_right,
-  .dynamic-content .block-img-sm-right .part_left {
-    margin: 0 0 16px;
-  }
-
-  .dynamic-content .list-files {
-    margin-bottom: 16px;
-    margin-top: 16px;
-  }
-
-  .dynamic-content .list-files .description {
-    margin-right: 20px;
-  }
-
-  .dynamic-content .list-files .btn_download {
-    width: 24px;
+  .article {
+    margin-top: 0;
   }
 
   .title_md {
