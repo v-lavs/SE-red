@@ -108,7 +108,9 @@
     padding-right: 12px;
   }
 }
-
+.header .sub-menu .menu__item{
+  margin-right: 0;
+}
 .menu-lang {
   .dropdown {
     background-image: url(../assets/img/language.svg);
@@ -133,6 +135,18 @@
 
 @include respond-to($lg) {
   .header {
+    &.bg_active{
+      .menu-lang .dropdown > .menu__link{
+        color: #1D2939;
+      }
+      .btn-burger{
+        color: #1D2939;
+        img{
+          filter: grayscale(1) invert(0.31);
+        }
+      }
+
+    }
     .container {
       max-width: 100%;
     }
@@ -154,9 +168,10 @@
       border-radius: 0;
       width: 100%;
 
-      &__icon {
+      .btn__icon {
         margin-left: 0;
         margin-right: 8px;
+        filter: brightness(0) invert(1);
       }
     }
   }
