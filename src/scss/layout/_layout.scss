@@ -12,12 +12,12 @@
   }
 
   @include respond-to($lg) {
-    max-width: 834px;
+    max-width: 940px;
     background: lightgreen;
   }
 
   @include respond-to($md) {
-    //max-width: 830px;
+    max-width: 830px;
     background: coral;
   }
   @include respond-to($sm) {

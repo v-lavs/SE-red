@@ -19,8 +19,15 @@
   max-width: 870px;
   padding: 0 20px;
   width: 100%;
-  margin: 0 auto;
+  //margin: 0 auto;
   background-color: #FFFFFF;
+}
+
+.article-inner {
+  max-width: 1345px;
+  padding: 0 257px;
+  width: 100%;
+  margin-left: auto;
 }
 
 .article {
@@ -66,6 +73,9 @@
 
   &__item {
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:last-child {
       margin-bottom: 0;
@@ -77,7 +87,9 @@
       height: 24px;
 
       svg {
+        display: block;
         width: 100%;
+        height: auto;
       }
     }
   }
@@ -98,4 +110,74 @@
       }
     }
   }
+}
+
+@include respond-to($xl) {
+  .article-inner {
+    max-width: 1106px;
+    padding: 0 208px;
+  }
+}
+
+@include respond-to($lg) {
+  .article-inner {
+    max-width: 740px;
+    padding: 0 130px;
+  }
+  .related-post-list {
+    .post-list__item {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+@include respond-to($md) {
+  .article-inner {
+    max-width: 672px;
+    padding: 0 90px;
+  }
+  .widget-share {
+    width: 70px;
+  }
+}
+
+@include respond-to($sm) {
+
+  .article-inner {
+    max-width: 100%;
+    padding: 48px 15px 0;
+    margin: 0 auto;
+  }
+  .widget-share {
+    width: 100%;
+    display: flex;
+    top: 0;
+    transform: none;
+    background-color: #FFFFFF;
+  }
+  .widget-share__item {
+    margin-bottom: 0;
+    margin-left: 18px;
+    flex-shrink: 0;
+  }
+  .related-post-list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 560px;
+
+    .post-list__item {
+      width: 100%;
+      margin-bottom: 16px;
+
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+}
+
+@include respond-to($xs) {
+
 }
