@@ -3772,6 +3772,7 @@ select {
 
 .section-visualization {
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 .post-3d .post__content {
