@@ -193,6 +193,7 @@
 
 @include respond-to($xs) {
   .section-about {
+    overflow: hidden;
     .wrap-img {
       width: 327px;
       height: 313px;
@@ -202,6 +203,10 @@
         margin-bottom: 5px;
       }
     }
+  }
+  .goal-fond{
+    max-width: 320px;
+    padding: 0 16px;
   }
   .experience {
     .title {

@@ -78,12 +78,18 @@
         width: 100%;
       }
     }
+
+    .switch-heading .toggle-block {
+      margin: -30px 5px 0;
+    }
   }
 }
-@include respond-to($xs){
-.filter-toolbar .nice-select .list{
-  min-width: 290px;
-  width: auto;
-  left: -33px;
+
+@include respond-to($xs) {
+  .filter-toolbar .nice-select .list {
+    min-width: 290px;
+    width: auto;
+    left: -33px;
+  }
 }
-}
+

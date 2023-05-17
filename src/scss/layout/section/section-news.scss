@@ -84,7 +84,11 @@
     }
   }
 }
-
+@media screen and (max-width: 640px) {
+  .switch-heading .toggle-block {
+    margin: 0 5px;
+  }
+}
 @include respond-to($xs) {
   .section-news {
     padding-top: 74px;
