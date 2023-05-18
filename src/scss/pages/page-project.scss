@@ -66,23 +66,19 @@
 
 }
 
-.block-nav-page {
-  position: relative;
+.btn-toggle-open {
+  display: none;
+  align-items: center;
+  border: 1px solid #DFE1E4;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-left: auto;
+  padding: 12px 22px;
 
-  .btn-toggle-open {
-    display: none;
-    align-items: center;
-    border: 1px solid #DFE1E4;
-    border-radius: 4px;
-    background-color: transparent;
-    //width: 83px;
-    padding: 12px 22px;
-
-    img {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-    }
+  img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -491,25 +487,23 @@ sup {
 }
 
 @include respond-to($lg) {
+  .btn-toggle-open {
+    display: flex;
+  }
   .block-nav-page {
-
-    .btn-toggle-open {
-      display: flex;
-    }
-
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-width: 360px;
+    width: auto;
+    overflow: visible;
+    background: #F8FAFD;
+    padding: 0;
+    border-radius: 4px 4px 0 0;
     .menu_page {
-      display: none;
-      position: absolute;
-      bottom: -13px;
-      right: 0;
-      transform: translateY(100%);
-      min-width: 300px;
-      width: auto;
-      overflow: visible;
-      background: #F8FAFD;
-      padding: 0;
-
-
+      max-height: 100%;
+      overflow: scroll;
       .menu__item {
         padding: 6px 16px;
         border-bottom: 1px solid #F2F4F7;
@@ -633,6 +627,10 @@ sup {
 
 
 @include respond-to($xs) {
+  .block-nav-page {
+    left: 0;
+    width: 100%;
+  }
   .section-gallery {
     .section__heading {
       margin-bottom: 40px;

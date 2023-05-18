@@ -64,10 +64,10 @@ $(document).ready(function () {
 
 //   MENU-PAGE
     $('.btn-toggle-open').on('click', function (e) {
-        $('.menu_page').fadeToggle();
+        $('.block-nav-page').fadeToggle();
     });
     $('.menu_page .menu__item').on('click', function (e) {
-        $('.menu_page').fadeOut();
+        $('.block-nav-page').fadeOut();
     });
 
 
