@@ -4066,6 +4066,7 @@ sup {
   margin-top: -96px;
   padding-top: 71px;
   padding-bottom: 64px;
+  z-index: 2;
 }
 
 .article .title_sm {
@@ -4079,6 +4080,7 @@ sup {
 .section-related-post {
   position: relative;
   background-color: #FFFFFF;
+  z-index: 0;
 }
 
 .section-related-post .title_sm {

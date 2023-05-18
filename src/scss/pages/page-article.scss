@@ -54,7 +54,7 @@
   margin-top: -96px;
   padding-top: 71px;
   padding-bottom: 64px;
-
+  z-index: 2;
 
   .title_sm {
     margin-bottom: 46px;
@@ -68,7 +68,7 @@
 .section-related-post {
   position: relative;
   background-color: #FFFFFF;
-
+  z-index: 0;
   .title_sm {
     margin-bottom: 24px;
   }
