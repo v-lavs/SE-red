@@ -1,13 +1,13 @@
 .page-article {
   padding-top: 0;
-
+  background-color: #FFFFFF;
   .section-banner {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     padding-top: 123px;
     min-height: 860px;
-
+    transition: opacity .2s;
     &:before {
       background-image: linear-gradient(180deg, #101828 0%, rgba(16, 24, 40, 0) 100%);
       background-color: transparent;

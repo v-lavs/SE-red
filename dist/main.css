@@ -4012,6 +4012,7 @@ sup {
 
 .page-article {
   padding-top: 0;
+  background-color: #FFFFFF;
 }
 
 .page-article .section-banner {
@@ -4020,6 +4021,7 @@ sup {
   top: 0;
   padding-top: 123px;
   min-height: 860px;
+  transition: opacity .2s;
 }
 
 .page-article .section-banner:before {
