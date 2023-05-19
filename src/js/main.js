@@ -80,47 +80,58 @@ $(document).ready(function () {
     $('.custom-select').niceSelect();
 
 
-    const $sectionBanner = $('.page-article .section-banner');
+    function hideArticleBanner() {
+        const $sectionBanner = $('.page-article .section-banner');
+
+        if ($sectionBanner.get(0)) {
+            const offset = Math.floor($(window).scrollTop());
+            const bannerHeight = Math.floor($sectionBanner.height());
+
+            requestAnimationFrame(() => {
+                if (offset <= 0) {
+                    $sectionBanner.css({
+                        opacity: 1,
+                    })
+                } else if (offset < bannerHeight) {
+                    $sectionBanner.css({
+                        opacity: 1 - ((offset * 1.2) / bannerHeight),
+                    })
+                    $sectionBanner.addClass('sticky');
+                } else {
+                    $sectionBanner.css({
+                        opacity: 0,
+                    })
+                    $sectionBanner.removeClass('sticky');
+                }
+
+            });
+        }
+    }
 
     $(window).on('scroll', (e) => {
-        const offset = Math.floor($(window).scrollTop());
-        const bannerHeight = Math.floor($sectionBanner.height());
-
-        requestAnimationFrame(() => {
-            if (offset <= 0) {
-                $sectionBanner.css({
-                    opacity: 1,
-                })
-            } else if (offset < bannerHeight) {
-                $sectionBanner.css({
-                    opacity: 1 - ((offset * 1.2) / bannerHeight),
-                })
-            }
-            else {
-                $sectionBanner.css({
-                    opacity:0,
-
-                })
-            }
-
-        });
+        hideArticleBanner();
     });
 
-//SLIDERS
+    hideArticleBanner();
+
+
+    //SLIDERS
 
 
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
-            // hashNavigation: {
-            //     watchState: true,
-            // },
             pagination: {
                 clickable: true,
                 el: ".pagination-wrap .swiper-pagination",
             },
         });
 
+        $('.menu-main .menu__link').click(function (e) {
+            e.preventDefault();
+            bannerSlider.slideTo($(this).index());
+        });
     }
+
     let galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 8,
         slidesPerView: 'auto',

@@ -4018,12 +4018,16 @@ sup {
 }
 
 .page-article .section-banner {
-  position: sticky;
-  position: -webkit-sticky;
+  position: relative;
   top: 0;
   padding-top: 123px;
   min-height: 860px;
   transition: opacity .2s;
+}
+
+.page-article .section-banner.sticky {
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .page-article .section-banner:before {
