@@ -107,21 +107,28 @@ $(document).ready(function () {
     });
 
 //SLIDERS
+
+
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
+            hashNavigation: {
+                watchState: true,
+            },
             pagination: {
+                clickable: true,
                 el: ".pagination-wrap .swiper-pagination",
             },
         });
+
     }
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
+    let galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 8,
         slidesPerView: 'auto',
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
     });
-    var galleryTop = new Swiper('.gallery-top', {
+    let galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
         navigation: {
             nextEl: '.swiper-button-next',
