@@ -111,9 +111,9 @@ $(document).ready(function () {
 
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
-            hashNavigation: {
-                watchState: true,
-            },
+            // hashNavigation: {
+            //     watchState: true,
+            // },
             pagination: {
                 clickable: true,
                 el: ".pagination-wrap .swiper-pagination",
