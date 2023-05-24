@@ -6,12 +6,16 @@
 .mfp-image-holder .mfp-close {
   right: 10px;
 }
-
+.mfp-image-holder .mfp-content {
+  width: 100%;
+}
 .mfp-bg,
 .mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: .45!important;
+  opacity: .8!important;
 }
-
+img.mfp-img {
+  width: 100%;
+}
 .mfp-content {
   position: static;
 }
