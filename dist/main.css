@@ -4239,7 +4239,7 @@ sup {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 0 30px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .menu:hover > .sub-menu {
@@ -4596,6 +4596,7 @@ sup {
     background: #F8FAFD;
     padding: 0;
     border-radius: 4px 4px 0 0;
+    padding-top: 10px;
   }
 
   .block-nav-page .menu_page {
@@ -4613,6 +4614,13 @@ sup {
 
   .block-nav-page .menu_page .menu__item:before {
     display: none;
+  }
+
+  .block-nav-page .btn_close {
+    display: block;
+    filter: grayscale(1) invert(0.31);
+    margin-right: 10px;
+    margin-left: auto;
   }
 
   .page__nav .container {

@@ -64,9 +64,9 @@ $(document).ready(function () {
 
 //   MENU-PAGE
     $('.btn-toggle-open').on('click', function (e) {
-        $('.block-nav-page').fadeToggle();
+        $('.block-nav-page').fadeIn();
     });
-    $('.menu_page .menu__item').on('click', function (e) {
+    $('.menu_page .menu__item, .block-nav-page .btn_close').on('click', function (e) {
         $('.block-nav-page').fadeOut();
     });
 
