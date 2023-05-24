@@ -10,11 +10,9 @@
 
 // CUSTOM SCRIPTS
 
-
 $(document).ready(function () {
 
-
-    //HEADER SCROLL
+//HEADER SCROLL
     let header = $('.header'),
         scrollPrev = 0;
 
@@ -35,8 +33,7 @@ $(document).ready(function () {
         }
     });
 
-
-    // MOBILE MENU
+// MOBILE MENU
     const nav = $('.header__nav');
 
     $('.btn-burger').on('click', function (e) {
@@ -57,12 +54,12 @@ $(document).ready(function () {
         $(this).toggleClass('sub-menu__toggle_active')
     });
 
-    //NOTIFICATION CLOSE
+//NOTIFICATION CLOSE
     $('.notification__close').on('click', function (e) {
         $('.wrap-notification').fadeOut();
     });
 
-//   MENU-PAGE
+//MENU-PAGE
     $('.btn-toggle-open').on('click', function (e) {
         $('.block-nav-page').fadeIn();
     });
@@ -77,9 +74,9 @@ $(document).ready(function () {
     });
 
 //CUSTOM SELECT
-    $('.custom-select').niceSelect();
+    $('.custom-select').niceSelect()
 
-
+//ANIM ARTICLE BANNER
     function hideArticleBanner() {
         const $sectionBanner = $('.page-article .section-banner');
 
@@ -114,9 +111,7 @@ $(document).ready(function () {
 
     hideArticleBanner();
 
-
-    //SLIDERS
-
+//SLIDERS
 
     if ($('.banner-slider').length > 0) {
         const bannerSlider = new Swiper(".banner-slider", {
@@ -150,7 +145,7 @@ $(document).ready(function () {
         }
     });
 
-//    SLIDE-DOWN SLIDE-THUMBS
+//SLIDE-DOWN SLIDE-THUMBS
     $('.panel-down').click(function (e) {
         $('.gallery-thumb-panel').toggleClass('active');
         $('.icon-fullscreen, .gallery-top .swiper-button-next, .gallery-top .swiper-button-prev').toggleClass('active-panel');
@@ -171,7 +166,7 @@ $(document).ready(function () {
         midClick: true // allow opening
     });
 
-//    SWIPER IN POPUP
+//SWIPER IN POPUP
     $('.popup-gallery-link').magnificPopup({
         callbacks: {
             open: function () {
@@ -189,7 +184,7 @@ $(document).ready(function () {
         }
     });
 
-// POPUP FEEDBACK
+//POPUP FEEDBACK
     $('.trigger-popup').click(function (e) {
         e.preventDefault();
         $('.popup-feedback').addClass('open_modal');
@@ -203,6 +198,17 @@ $(document).ready(function () {
         $('body').removeClass('modal_open');
     });
 
+
+
+    $('.popup-banner').addClass('open_modal');
+    $('.backdrop').fadeIn();
+    $('body').addClass('modal_open');
+
+    $('.popup-banner .btn_close, .backdrop').click(function () {
+        $('.popup-banner').removeClass('open_modal');
+        jQuery('.backdrop').fadeOut();
+        $('body').removeClass('modal_open');
+    })
 });
 
 
