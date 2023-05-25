@@ -472,7 +472,11 @@
                 <button type="button" aria-label="Закрити попап" class="btn_close"></button>
             </div>
             <div class="popup-banner__body">
-                <img src="assets/img/modal_desktop_06%201.jpg" alt="" class="">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/1200?text=Large" alt="Large">
+                    <source media="(min-width: 600px)" srcset="https://via.placeholder.com/1024?text=Medium" alt="Medium">
+                    <img src="assets/img/modal_desktop_06%201.jpg" alt="">
+                </picture>
             </div>
             <div class="popup-banner__footer">
                 <a href="#popupFeedback" class="btn btn_warm trigger-popup">

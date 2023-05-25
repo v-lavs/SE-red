@@ -205,15 +205,12 @@ $(document).ready(function () {
         $('.backdrop').fadeIn();
         $('body').addClass('modal_open');
     }
-    // $('.popup-banner').addClass('open_modal');
-    // $('.backdrop').fadeIn();
-    // $('body').addClass('modal_open');
-    //
-    // $('.popup-banner .btn_close, .backdrop').click(function () {
-    //     $('.popup-banner').removeClass('open_modal');
-    //     jQuery('.backdrop').fadeOut();
-    //     $('body').removeClass('modal_open');
-    // })
+
+    $('.popup-banner .btn_close, .backdrop').click(function () {
+        $('.popup-banner').removeClass('open_modal');
+        jQuery('.backdrop').fadeOut();
+        $('body').removeClass('modal_open');
+    })
 });
 
 
