@@ -482,13 +482,17 @@
 
             <picture>
                 <source srcset="assets/img/02_Banner_Laptop.jpg"
-                        media="(max-width: 1440px)">
+                        media="(min-width: 1201px) and (max-width: 1440px)">
+
                 <source srcset="assets/img/03_Banner_Tablet_Horizontal.jpg"
-                        media="(orientation: landscape) and (max-width: 1200px)  and (min-width: 768px)">
+                        media="(min-width: 768px) and (max-width: 1200px) and (orientation: landscape)">
+
                 <source srcset="assets/img/04_Banner_Tablet_Vertical.jpg"
                         media="(orientation: portrait) and (max-width: 1200px)  and (min-width: 768px)">
+
                 <source srcset="assets/img/05-banner-mobile.jpg"
                         media="(max-width: 767px)">
+
                 <img src="assets/img/01_Banner_Desktop.jpg" alt="">
             </picture>
 

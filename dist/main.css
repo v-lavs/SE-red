@@ -5637,7 +5637,7 @@ sup {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
   .popup-banner {
     max-width: 930px;
   }
