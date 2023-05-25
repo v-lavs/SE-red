@@ -91,15 +91,13 @@
   background-position: center;
   background-size: contain;
 }
+.bnt_call,
+.btn_back{
 
-.bnt_call{
-  display: none;
   position: fixed;
   right: 16px;
-  top: 70%;
   width: 62px;
   height: 62px;
-  background-color: #FCC214;
   border-radius: 50%;
   padding: 0;
   z-index: 100;
@@ -108,6 +106,30 @@
     margin-right:0;
     filter: brightness(0) invert(1);
   }
+}
+.btn_back{
+  top: 90%;
+  background-color: #FFFFFF;
+  border: 1px solid #FCC214;
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover,
+  &:focus{
+    background-color: #FFFFFF;
+  }
+}
+.bnt_call{
+  display: none;
+  top: 70%;
+  background-color: #FCC214;
 }
 
 @include respond-to($sm){
@@ -122,6 +144,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .btn_back,
   .bnt_call{
     width: 52px;
     height: 52px;

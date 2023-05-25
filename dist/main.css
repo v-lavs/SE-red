@@ -2111,23 +2111,48 @@ body.modal_open {
   background-size: contain;
 }
 
-.bnt_call {
-  display: none;
+.bnt_call,
+.btn_back {
   position: fixed;
   right: 16px;
-  top: 70%;
   width: 62px;
   height: 62px;
-  background-color: #FCC214;
   border-radius: 50%;
   padding: 0;
   z-index: 100;
 }
 
-.bnt_call .btn__icon {
+.bnt_call .btn__icon,
+.btn_back .btn__icon {
   margin-left: 0;
   margin-right: 0;
   filter: brightness(0) invert(1);
+}
+
+.btn_back {
+  top: 90%;
+  background-color: #FFFFFF;
+  border: 1px solid #FCC214;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.btn_back.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn_back:hover,
+.btn_back:focus {
+  background-color: #FFFFFF;
+}
+
+.bnt_call {
+  display: none;
+  top: 70%;
+  background-color: #FCC214;
 }
 
 #error-msg {
@@ -5418,6 +5443,7 @@ sup {
     padding-right: 15px;
   }
 
+  .btn_back,
   .bnt_call {
     width: 52px;
     height: 52px;
