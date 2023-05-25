@@ -141,7 +141,8 @@
                         <div class="container">
                             <div class="section__content">
                                 <div class="label label_outline">Будівництво завершене</div>
-                                <div class="location"><span class="zone"> Франківський район</span> <span class="street"> / вул. Стрийська, 266</span>
+                                <div class="location"><span class="zone"> Франківський район</span> <span
+                                        class="street"> / вул. Стрийська, 266</span>
                                 </div>
                                 <h2 class="title title_md">266 SMART</h2>
                                 <div class="slogan title title_sm">Дихай. Гуляй. Живи</div>
@@ -466,62 +467,65 @@
         </div>
     </footer>
 
-    <div class="popup popup-banner open_modal">
-        <div class="popup-banner__inner">
-            <div class="popup-banner__header">
-                <button type="button" aria-label="Закрити попап" class="btn_close"></button>
-            </div>
-            <div class="popup-banner__body">
-                <picture>
-                    <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/1200?text=Large" alt="Large">
-                    <source media="(min-width: 600px)" srcset="https://via.placeholder.com/1024?text=Medium" alt="Medium">
-                    <img src="assets/img/modal_desktop_06%201.jpg" alt="">
-                </picture>
-            </div>
-            <div class="popup-banner__footer">
-                <a href="#popupFeedback" class="btn btn_warm trigger-popup">
+    <a href="#popupFeedback" class="btn btn_with-icon bnt_call trigger-popup">
+        <img src="assets/img/local-phone.svg" alt="" class="btn__icon">
+    </a>
+</div>
+
+<div class="popup popup-banner open_modal">
+    <div class="popup-banner__inner">
+        <div class="popup-banner__header">
+            <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+        </div>
+        <div class="popup-banner__body">
+            <picture>
+                <source media="(max-width: 480px)" srcset="" alt="Medium">
+                <img src="assets/img/modal_desktop_06%201.jpg" alt="">
+            </picture>
+        </div>
+        <div class="popup-banner__footer">
+            <a href="#popupFeedback" class="btn btn_warm trigger-popup">
                     <span class="span icon">
                         <img src="assets/img/local-phone.svg" alt="">
                     </span>
-                    Зворотній зв’язок</a>
-                <p>*Наш менеджер ознайомить Вас зі всією важливою інформацією</p>
-            </div>
+                Зворотній зв’язок</a>
+            <p>*Наш менеджер ознайомить Вас зі всією важливою інформацією</p>
         </div>
     </div>
+</div>
 
-    <div class="popup popup-feedback" id="popupFeedback">
-        <div class="popup-feedback__header">
-            <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+<div class="popup popup-feedback" id="popupFeedback">
+    <div class="popup-feedback__header">
+        <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+    </div>
+    <div class="popup-feedback__body">
+        <div class="popup-feedback__content">
+            <form action="#" method="post" class="popup-form">
+                <h3 class="title title_xs">Зворотній дзвінок</h3>
+                <div class="sub-title">Надішліть Ваш номер телефону і ми передзвонимо протягом 1 години.</div>
+                <div class="form__group">
+                    <label for="phone" class="label-input">Номер телефону</label>
+                    <input id="phone" type="tel" placeholder="+ 38 (063) 42 91 572">
+                    <span id="error-msg" class="hide">Номер телефону введено некоректно</span>
+                </div>
+                <div class="form__group">
+                    <label for="name" class="label-input">Ваше ім’я</label>
+                    <input id="name" type="text" placeholder="Як до Вас звертатись">
+                </div>
+                <button class="btn btn_warm btn_submit">Замовити дзвінок</button>
+            </form>
+            <p>Натискаючи на кнопку “Замовити дзвінок” ви підтверджуєте згоду на <a href="#"><strong>обробку
+                персональних
+                даних</strong></a></p>
         </div>
-        <div class="popup-feedback__body">
-            <div class="popup-feedback__content">
-                <form action="#" method="post" class="popup-form">
-                    <h3 class="title title_xs">Зворотній дзвінок</h3>
-                    <div class="sub-title">Надішліть Ваш номер телефону і ми передзвонимо протягом 1 години.</div>
-                    <div class="form__group">
-                        <label for="phone" class="label-input">Номер телефону</label>
-                        <input id="phone" type="tel" placeholder="+ 38 (063) 42 91 572">
-                        <span id="error-msg" class="hide">Номер телефону введено некоректно</span>
-                    </div>
-                    <div class="form__group">
-                        <label for="name" class="label-input">Ваше ім’я</label>
-                        <input id="name" type="text" placeholder="Як до Вас звертатись">
-                    </div>
-                    <button class="btn btn_warm btn_submit">Замовити дзвінок</button>
-                </form>
-                <p>Натискаючи на кнопку “Замовити дзвінок” ви підтверджуєте згоду на <a href="#"><strong>обробку
-                    персональних
-                    даних</strong></a></p>
-            </div>
-            <div class="popup-feedback__thumb" style="background-image: url(assets/img/img-card.jpg);"></div>
-            <div class="thank-you-page">
-                <button type="button" aria-label="Закрити попап" class="btn_close"></button>
-                <div class="popup__body">
-                    <div class="content">
-                        <div class="icon"></div>
-                        <div class="title title_xs">Ваш запит прийнято</div>
-                        <p>Очікуйте дзвінок від нашого менеджера протягом 1 години.</p>
-                    </div>
+        <div class="popup-feedback__thumb" style="background-image: url(assets/img/img-card.jpg);"></div>
+        <div class="thank-you-page">
+            <button type="button" aria-label="Закрити попап" class="btn_close"></button>
+            <div class="popup__body">
+                <div class="content">
+                    <div class="icon"></div>
+                    <div class="title title_xs">Ваш запит прийнято</div>
+                    <p>Очікуйте дзвінок від нашого менеджера протягом 1 години.</p>
                 </div>
             </div>
         </div>

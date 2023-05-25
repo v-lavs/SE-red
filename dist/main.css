@@ -2111,6 +2111,25 @@ body.modal_open {
   background-size: contain;
 }
 
+.bnt_call {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 70%;
+  width: 62px;
+  height: 62px;
+  background-color: #FCC214;
+  border-radius: 50%;
+  padding: 0;
+  z-index: 100;
+}
+
+.bnt_call .btn__icon {
+  margin-left: 0;
+  margin-right: 0;
+  filter: brightness(0) invert(1);
+}
+
 #error-msg {
   display: block;
   left: 0;
@@ -4039,8 +4058,10 @@ sup {
   position: relative;
   top: 0;
   padding-top: 123px;
+  height: auto;
   min-height: 860px;
   transition: opacity .2s;
+  z-index: 1;
 }
 
 .page-article .section-banner.sticky {
@@ -4824,8 +4845,13 @@ sup {
     font-size: 66px;
   }
 
+  .bnt_call {
+    display: flex;
+  }
+
   .popup-banner {
     max-width: 328px;
+    width: 95%;
   }
 
   .popup-banner .btn_warm {
@@ -5076,12 +5102,15 @@ sup {
     margin: 0 auto;
   }
 
+  .wrap-widget-share {
+    position: static;
+  }
+
   .widget-share {
     width: 100%;
     display: flex;
-    top: 0;
     transform: none;
-    background-color: #FFFFFF;
+    margin-left: 16px;
   }
 
   .widget-share__item {
@@ -5218,6 +5247,7 @@ sup {
 
   .dynamic-content .list-files .btn_download {
     width: 24px;
+    padding: 0;
   }
 
   .switch-heading .toggle-block {
@@ -5381,6 +5411,12 @@ sup {
     padding-right: 15px;
   }
 
+  .bnt_call {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+  }
+
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     display: flex;
     justify-content: center;
@@ -5398,6 +5434,7 @@ sup {
   .popup-feedback {
     font-size: 12px;
     height: 480px;
+    width: 95%;
   }
 
   .popup-feedback__header {
@@ -5535,7 +5572,11 @@ sup {
   }
 
   .page-article .section-banner {
-    min-height: 600px;
+    min-height: 490px;
+  }
+
+  .article {
+    padding-top: 50px;
   }
 
   .widget-share__item:first-child {

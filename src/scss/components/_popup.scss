@@ -287,6 +287,7 @@
 @include respond-to($sm) {
   .popup-banner {
     max-width: 328px;
+    width: 95%;
 
     .btn_warm {
       min-width: 0;
@@ -341,7 +342,7 @@
   .popup-feedback {
     font-size: 12px;
     height: 480px;
-
+    width: 95%;
     &__header {
       padding: 10px 0;
     }
