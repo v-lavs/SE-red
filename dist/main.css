@@ -2911,6 +2911,7 @@ img.mfp-img {
 .footer {
   background-color: #F2F4F7;
   padding: 64px 0 60px;
+  overflow: hidden;
 }
 
 .footer_top {
@@ -3053,6 +3054,7 @@ img.mfp-img {
 .section-banner {
   position: relative;
   color: #F8FAFD;
+  height: 100vh;
 }
 
 .section-banner .background-video {
@@ -3167,7 +3169,7 @@ img.mfp-img {
   align-items: center;
   position: relative;
   padding-bottom: 64px;
-  min-height: 720px;
+  min-height: 100vh;
   height: 100%;
 }
 
@@ -3673,6 +3675,7 @@ img.mfp-img {
   position: relative;
   width: 100%;
   min-height: 676px;
+  overflow: hidden;
 }
 
 .block-map__inner {
@@ -3978,6 +3981,10 @@ sup {
   border: none;
   margin-left: 20px;
   margin-bottom: 0;
+}
+
+.toolbar-btn:first-child {
+  margin-left: 0;
 }
 
 .filter-toolbar {
@@ -5261,6 +5268,10 @@ sup {
   .page-news .post-list__item {
     width: 100%;
   }
+
+  .filter-toolbar .wrap-select {
+    width: 180px;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -5412,10 +5423,6 @@ sup {
     font-size: 24px;
   }
 
-  .section-banner__bg .container {
-    min-height: 600px;
-  }
-
   .section-about {
     overflow: hidden;
   }
@@ -5516,10 +5523,6 @@ sup {
     height: 32px;
   }
 
-  .filter-toolbar .wrap-select {
-    width: 180px;
-  }
-
   .filter-toolbar .nice-select .list {
     min-width: 290px;
     width: auto;
@@ -5535,7 +5538,7 @@ sup {
   }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
   .section-banner .btn_warm {
     min-width: 0;
     width: auto;
@@ -5545,7 +5548,9 @@ sup {
   .section-banner .btn_stroke {
     width: 65px;
   }
+}
 
+@media screen and (max-width: 359px) {
   .block-nav-page .btn-toggle-open {
     padding: 10px 18px;
   }
