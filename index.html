@@ -479,13 +479,19 @@
             <button type="button" aria-label="Закрити попап" class="btn_close"></button>
         </div>
         <div class="popup-banner__body">
+
             <picture>
-                <source media="(max-width: 1440px)" srcset="assets/img/02_Banner_Laptop.jpg" alt="Large">
-                <source media="(max-width: 1280px)" srcset="assets/img/03_Banner_Tablet_Horizontal.jpg" alt="Medium">
-                <source media="(orientation: portrait) and (max-width: 1200px)" srcset="assets/img/04_Banner_Tablet_Vertical.jpg" alt="Medium">
-                <source media="(max-width: 767px)" srcset="assets/img/05_Banner_Mobile.jpg" alt="Small">
+                <source srcset="assets/img/02_Banner_Laptop.jpg"
+                        media="(max-width: 1440px)">
+                <source srcset="assets/img/03_Banner_Tablet_Horizontal.jpg"
+                        media="(orientation: landscape) and (max-width: 1200px)  and (min-width: 768px)">
+                <source srcset="assets/img/04_Banner_Tablet_Vertical.jpg"
+                        media="(orientation: portrait) and (max-width: 1200px)  and (min-width: 768px)">
+                <source srcset="assets/img/05-banner-mobile.jpg"
+                        media="(max-width: 767px)">
                 <img src="assets/img/01_Banner_Desktop.jpg" alt="">
             </picture>
+
         </div>
         <div class="popup-banner__footer">
             <a href="#popupFeedback" class="btn btn_warm trigger-popup">
