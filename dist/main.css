@@ -3243,6 +3243,13 @@ img.mfp-img {
   height: auto;
   display: block;
   margin-bottom: 22px;
+  transform: scale(1);
+  transition: .5s;
+  transform-origin: bottom;
+}
+
+.section-about .wrap-img img:hover {
+  transform: scale(1.05);
 }
 
 .section-about .img-caption {
