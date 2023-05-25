@@ -3169,7 +3169,10 @@ img.mfp-img {
   align-items: center;
   position: relative;
   padding-bottom: 64px;
-  min-height: 100vh;
+  height: 100%;
+}
+
+.banner-slider {
   height: 100%;
 }
 
