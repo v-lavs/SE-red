@@ -2118,6 +2118,7 @@ body.modal_open {
   width: 62px;
   height: 62px;
   border-radius: 50%;
+  background-color: #FCC214;
   padding: 0;
   z-index: 100;
 }
@@ -2126,17 +2127,19 @@ body.modal_open {
 .btn_back .btn__icon {
   margin-left: 0;
   margin-right: 0;
-  filter: brightness(0) invert(1);
 }
 
 .btn_back {
   top: 90%;
-  background-color: #FFFFFF;
-  border: 1px solid #FCC214;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+}
+
+.btn_back .btn__icon {
+  width: 23px;
+  height: 23px;
 }
 
 .btn_back.show {
@@ -2144,15 +2147,13 @@ body.modal_open {
   visibility: visible;
 }
 
-.btn_back:hover,
-.btn_back:focus {
-  background-color: #FFFFFF;
-}
-
 .bnt_call {
   display: none;
   top: 70%;
-  background-color: #FCC214;
+}
+
+.bnt_call .btn__icon {
+  filter: brightness(0) invert(1);
 }
 
 #error-msg {
