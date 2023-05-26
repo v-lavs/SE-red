@@ -187,7 +187,7 @@ $(document).ready(function () {
     });
 
 //POPUP FEEDBACK
-    $('.trigger-popup').click(function (e) {
+    $('.trigger-popup, .bnt_call').click(function (e) {
         e.preventDefault();
         $('.popup-feedback').addClass('open_modal');
         $('.backdrop').fadeIn();
@@ -202,13 +202,13 @@ $(document).ready(function () {
 
 
     if ($('.popup-banner').hasClass('open_modal')) {
-        $('.backdrop').fadeIn();
+        $('.overlay').fadeIn();
         $('body').addClass('modal_open');
     }
 
-    $('.popup-banner .btn_close, .backdrop').click(function () {
+    $('.popup-banner .btn_close, .overlay').click(function () {
         $('.popup-banner').removeClass('open_modal');
-        jQuery('.backdrop').fadeOut();
+        jQuery('.overlay').fadeOut();
         $('body').removeClass('modal_open');
     })
 
