@@ -1,4 +1,4 @@
-<svg width="1920" height="676" viewBox="0 0 1920 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg   preserveAspectRatio="none" width="1920" height="676" viewBox="0 0 1920 676" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1920 18H0V658H1920V18Z" fill="#403E3D"/>
 <mask id="mask0_185_2981" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="18" width="1920" height="640">
 <path d="M1920 18H0V658H1920V18Z" fill="white"/>

@@ -5287,6 +5287,10 @@ sup {
     margin: 0 5px;
   }
 
+  .block-map {
+    min-height: 320px;
+  }
+
   .construction-period-filter {
     flex-wrap: wrap;
   }

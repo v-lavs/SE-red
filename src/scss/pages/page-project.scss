@@ -595,6 +595,9 @@ sup {
 }
 
 @media screen and (max-width: 640px) {
+  .block-map{
+    min-height: 320px;
+  }
   .construction-period-filter {
     flex-wrap: wrap;
 
