@@ -202,13 +202,13 @@ $(document).ready(function () {
 
 
     if ($('.popup-banner').hasClass('open_modal')) {
-        $('.overlay').fadeIn();
+        $('.backdrop').fadeIn();
         $('body').addClass('modal_open');
     }
 
     $('.popup-banner .btn_close, .overlay').click(function () {
         $('.popup-banner').removeClass('open_modal');
-        jQuery('.overlay').fadeOut();
+        jQuery('.backdrop').fadeOut();
         $('body').removeClass('modal_open');
     })
 
