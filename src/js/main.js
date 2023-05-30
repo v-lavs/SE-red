@@ -68,11 +68,11 @@ $(document).ready(function () {
         $('.menu_page .menu__item, .block-nav-page .btn_close').on('click', function (e) {
             $('.block-nav-page').fadeOut();
         });
-    };
+    }
 
 //SWITCH NEWS-ACTION
     $('#switch').click(function () {
-        $('.section-news .section__heading').toggleClass('switch-toggle');
+        $('.switch-heading .section__heading').toggleClass('switch-toggle');
     });
 
 //CUSTOM SELECT
