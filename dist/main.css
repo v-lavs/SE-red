@@ -2953,6 +2953,10 @@ img.mfp-img {
   z-index: 310;
 }
 
+.overlay {
+  z-index: 1000;
+}
+
 .footer {
   background-color: #F2F4F7;
   padding: 64px 0 60px;
@@ -3789,6 +3793,10 @@ img.mfp-img {
 
 .construction-progress .swiper-slide img {
   display: block;
+}
+
+.section-documents {
+  overflow: hidden;
 }
 
 .section-documents .title_xs {

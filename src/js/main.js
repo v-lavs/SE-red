@@ -190,20 +190,22 @@ $(document).ready(function () {
     $('.trigger-popup, .bnt_call').click(function (e) {
         e.preventDefault();
         $('.popup-feedback').addClass('open_modal');
-        $('.backdrop').fadeIn();
+        $('.overlay').fadeIn();
         $('body').toggleClass('modal_open');
     });
 
     $('.popup .btn_close').click(function (e) {
         $('.popup').removeClass('open_modal');
-        $('.backdrop').fadeOut();
+        $('.overlay').fadeOut();
         $('body').removeClass('modal_open');
     });
 
     $(window).on('load', function() {
-    $('.home-page .popup-banner').addClass('open_modal');
-        $('.backdrop').fadeIn();
-        $('body').addClass('modal_open');
+        if ($('.home-page').length > 0) {
+            $('.popup-banner').hasClass('open_modal');
+            $('.backdrop').fadeIn();
+            $('body').addClass('modal_open');
+        }
     });
 
     $('.popup-banner .btn_close, .overlay').click(function () {
