@@ -200,11 +200,11 @@ $(document).ready(function () {
         $('body').removeClass('modal_open');
     });
 
-
-    if ($('.popup-banner').hasClass('open_modal')) {
+    $(window).on('load', function() {
+    $('.home-page .popup-banner').addClass('open_modal');
         $('.backdrop').fadeIn();
         $('body').addClass('modal_open');
-    }
+    });
 
     $('.popup-banner .btn_close, .overlay').click(function () {
         $('.popup-banner').removeClass('open_modal');
